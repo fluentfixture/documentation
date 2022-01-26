@@ -2,15 +2,46 @@
 
 This section covers number-related generator functions.
 
-* [`real()`](number-generators.md#real-min-max)
-* [`int()`](number-generators.md#int-min-max)
-* [`num()`](number-generators.md#num-val)
-* [`one()`](number-generators.md#one)
-* [`zero()`](number-generators.md#zero)
+<table>
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Returns</th>
+         <th data-type="checkbox">Deterministic</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><a href="number-generators.md#real-min-max"><code>real()</code></a></td>
+         <td><a href="../streams/number-stream.md"><code>NumberStream</code></a></td>
+         <td>false</td>
+      </tr>
+      <tr>
+         <td><a href="number-generators.md#int-min-max"><code>int()</code></a></td>
+         <td><a href="../streams/number-stream.md"><code>NumberStream</code></a></td>
+         <td>false</td>
+      </tr>
+      <tr>
+         <td><a href="number-generators.md#num-val"><code>num()</code></a></td>
+         <td><a href="../streams/number-stream.md"><code>NumberStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="number-generators.md#one"><code>one()</code></a></td>
+         <td><a href="../streams/number-stream.md"><code>NumberStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="number-generators.md#zero"><code>zero()</code></a></td>
+         <td><a href="../streams/number-stream.md"><code>NumberStream</code></a></td>
+         <td>true</td>
+      </tr>
+   </tbody>
+</table>
 
 ## real (min, max)
 
-Creates a [`NumberStream`](../streams/number-stream.md) that generates a float number with the given boundaries.
+Creates a [`NumberStream`](../streams/number-stream.md) that generates a float number within the given boundary.
 
 | Name  | Description                                               |
 | ----- | --------------------------------------------------------- |
@@ -26,7 +57,7 @@ console.log(real(1, 10).single());
 
 ## int (min, max)
 
-Creates a [`NumberStream`](../streams/number-stream.md) that generates an integer number with the given boundaries.
+Creates a [`NumberStream`](../streams/number-stream.md) that generates an integer number within the given boundary.
 
 | Name  | Description                                               |
 | ----- | --------------------------------------------------------- |

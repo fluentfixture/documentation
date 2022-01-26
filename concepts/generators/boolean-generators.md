@@ -2,9 +2,32 @@
 
 This section covers boolean-related generator functions.
 
-* [`bool()`](boolean-generators.md#bool-percentage)
-* [`truthy()`](boolean-generators.md#truthy)
-* [`falsy()`](boolean-generators.md#falsy)
+<table>
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Returns</th>
+         <th data-type="checkbox">Deterministic</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><a href="boolean-generators.md#bool-percentage"><code>pick()</code></a></td>
+         <td><a href="../streams/boolean-stream.md"><code>BooleanStream</code></a></td>
+         <td>false</td>
+      </tr>
+      <tr>
+         <td><a href="boolean-generators.md#truthy"><code>truthy()</code></a></td>
+         <td><a href="../streams/boolean-stream.md"><code>BooleanStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="boolean-generators.md#falsy"><code>falsy()</code></a></td>
+         <td><a href="../streams/boolean-stream.md"><code>BooleanStream</code></a></td>
+         <td>true</td>
+      </tr>
+   </tbody>
+</table>
 
 ## bool (percentage)
 

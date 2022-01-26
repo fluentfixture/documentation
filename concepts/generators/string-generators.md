@@ -2,14 +2,52 @@
 
 This section covers string-related generator functions.
 
-* [`text()`](string-generators.md#text-str)
-* [`str()`](string-generators.md#str-length)
-* [`hex()`](string-generators.md#hex-length)
-* [`binary()`](string-generators.md#binary-length)
-* [`octal()`](string-generators.md#octal-length)
-* [`numeric()`](string-generators.md#numeric-length)
-* [`alphabetic()`](string-generators.md#alphabetic-length)
-* [`alphanumeric()`](string-generators.md#str-length-1)
+<table>
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Returns</th>
+         <th data-type="checkbox">Deterministic</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><a href="string-generators.md#text-str"><code>text()</code></a></td>
+         <td><a href="../streams/string-stream.md"><code>StringStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="string-generators.md#str-length"><code>str()</code></a></td>
+         <td><a href="../streams/string-stream.md"><code>StringStream</code></a></td>
+         <td>false</td>
+      </tr>
+      <tr>
+         <td><a href="string-generators.md#hex-length"><code>hex()</code></a></td>
+         <td><a href="../streams/string-stream.md"><code>StringStream</code></a></td>
+         <td>false</td>
+      </tr>
+      <tr>
+         <td><a href="string-generators.md#octal-length"><code>octal()</code></a></td>
+         <td><a href="../streams/string-stream.md"><code>StringStream</code></a></td>
+         <td>false</td>
+      </tr>
+      <tr>
+         <td><a href="string-generators.md#numeric-length"><code>numeric()</code></a></td>
+         <td><a href="../streams/string-stream.md"><code>StringStream</code></a></td>
+         <td>false</td>
+      </tr>
+      <tr>
+         <td><a href="string-generators.md#alphabetic-length"><code>alphabetic()</code></a></td>
+         <td><a href="../streams/string-stream.md"><code>StringStream</code></a></td>
+         <td>false</td>
+      </tr>
+      <tr>
+         <td><a href="string-generators.md#alphanumeric-length"><code>alphanumeric()</code></a></td>
+         <td><a href="../streams/string-stream.md"><code>StringStream</code></a></td>
+         <td>false</td>
+      </tr>
+   </tbody>
+</table>
 
 ## text (str)
 

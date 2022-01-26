@@ -2,14 +2,41 @@
 
 This section covers date-related generator functions.
 
-* [`date()`](date-generators.md#date-min-max)
-* [`now()`](date-generators.md#now)
-* [`yesterday()`](date-generators.md#yesterday)
-* [`tomorrow()`](date-generators.md#yesterday-1)
+<table>
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Returns</th>
+         <th data-type="checkbox">Deterministic</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><a href="date-generators.md#date-min-max"><code>date()</code></a></td>
+         <td><a href="../streams/date-stream.md"><code>DateStream</code></a></td>
+         <td>false</td>
+      </tr>
+      <tr>
+         <td><a href="date-generators.md#now"><code>now()</code></a></td>
+         <td><a href="../streams/date-stream.md"><code>DateStream</code></a></td>
+         <td>false</td>
+      </tr>
+      <tr>
+         <td><a href="date-generators.md#yesterday"><code>yesterday()</code></a></td>
+         <td><a href="../streams/date-stream.md"><code>DateStream</code></a></td>
+         <td>false</td>
+      </tr>
+      <tr>
+         <td><a href="date-generators.md#tomorrow"><code>tomorrow()</code></a></td>
+         <td><a href="../streams/date-stream.md"><code>DateStream</code></a></td>
+         <td>false</td>
+      </tr>
+   </tbody>
+</table>
 
 ## date (min, max)
 
-Creates a [`DateStream`](../streams/date-stream.md) that generates a date with the given boundaries.
+Creates a [`DateStream`](../streams/date-stream.md) that generates a date within the given boundary.
 
 | Name  | Description                                                             |
 | ----- | ----------------------------------------------------------------------- |

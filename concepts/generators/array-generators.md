@@ -2,9 +2,32 @@
 
 This section covers array-related generator functions.
 
-* [`pick()`](array-generators.md#pick-array)
-* [`take()`](array-generators.md#take-array-count)
-* [`shuffle()`](array-generators.md#shuffle-array)
+<table>
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Returns</th>
+         <th data-type="checkbox">Deterministic</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><a href="array-generators.md#pick-array"><code>pick()</code></a></td>
+         <td><a href="../streams/stream.md"><code>Stream</code></a></td>
+         <td>false</td>
+      </tr>
+      <tr>
+         <td><a href="array-generators.md#take-array-count"><code>take()</code></a></td>
+         <td><a href="../streams/array-stream.md"><code>ArrayStream</code></a></td>
+         <td>false</td>
+      </tr>
+      <tr>
+         <td><a href="array-generators.md#shuffle-array"><code>shuffle()</code></a></td>
+         <td><a href="../streams/array-stream.md"><code>ArrayStream</code></a></td>
+         <td>false</td>
+      </tr>
+   </tbody>
+</table>
 
 ## pick (array)
 
