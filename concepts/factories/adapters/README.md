@@ -4,4 +4,4 @@
 
 In FluentFixture, the only way to use static data with the FluentFixture is using the adapters. At this moment, FluentFixture provides two decorators listed below.
 
-<table><thead><tr><th>Name</th><th>Type</th><th data-type="checkbox">Deterministic</th></tr></thead><tbody><tr><td><code></code><a href="value-adapter.md"><code>ValueAdapter</code></a><code></code></td><td><code>any</code></td><td>true</td></tr><tr><td><code></code><a href="function-adapter.md"><code>FunctionAdapter</code></a><code></code></td><td><code>function</code></td><td>true</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th>Type</th><th data-type="checkbox">Deterministic</th></tr></thead><tbody><tr><td><a href="value-adapter.md"><code>ValueAdapter</code></a></td><td><code>any</code></td><td>true</td></tr><tr><td><a href="function-adapter.md"><code>FunctionAdapter</code></a></td><td><code>function</code></td><td>true</td></tr></tbody></table>

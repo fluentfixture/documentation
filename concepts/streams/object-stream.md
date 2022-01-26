@@ -1,9 +1,5 @@
 # Object Stream
 
-{% hint style="info" %}
-The following code snippets contain constructors of the internal classes. In FluentFixture, there is no way to initialize these classes directly, but these code snippets help understand the core concepts of the library. These classes can be initialized by using factory methods, [generators](../generators/).
-{% endhint %}
-
 ``[`ObjectStream`](object-stream.md) extends the [`Stream`](stream.md) class for object operations.
 
 * ``[`dynamic()`](object-stream.md#dynamic-property-factory)``

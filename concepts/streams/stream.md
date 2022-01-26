@@ -2,7 +2,67 @@
 
 ``[`Stream`](stream.md) is the superclass of all stream types.
 
-<table><thead><tr><th>Name</th><th>Returns</th><th data-type="checkbox">Deterministic</th></tr></thead><tbody><tr><td><a href="stream.md#single"><code>single()</code></a><code></code></td><td><code>mock data</code></td><td>true</td></tr><tr><td><a href="stream.md#convert-fn"><code>convert()</code></a></td><td><a href="stream.md"><code>Stream</code></a> </td><td>true</td></tr><tr><td><a href="stream.md#apply-fn"><code>apply()</code></a><code></code></td><td><code>concrete stream type</code></td><td>true</td></tr><tr><td><a href="stream.md#optional-percentage"><code>optional()</code></a><code></code></td><td><a href="stream.md"><code>Stream</code></a> </td><td>false</td></tr><tr><td><a href="stream.md#nullable-percentage"><code>nullable()</code></a><code></code></td><td><a href="stream.md"><code>Stream</code></a> </td><td>false</td></tr><tr><td><a href="stream.md#array-length"><code>array()</code></a><code></code></td><td><code></code><a href="array-stream.md"><code>ArrayStream</code></a><code></code></td><td>true</td></tr><tr><td><a href="stream.md#format-template"><code>format()</code></a><code></code></td><td><code></code><a href="string-stream.md"><code>StringStream</code></a></td><td>true</td></tr><tr><td><a href="stream.md#memo"><code>memo()</code></a><code></code></td><td><a href="stream.md"><code>Stream</code></a> </td><td>true</td></tr><tr><td><a href="stream.md#dump-fn"><code>dump()</code></a><code></code></td><td><a href="stream.md"><code>Stream</code></a> </td><td>true</td></tr><tr><td><a href="stream.md#getfactory"><code>getFactory()</code></a><code></code></td><td><code>decorated factory</code></td><td>true</td></tr></tbody></table>
+<table>
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Returns</th>
+         <th data-type="checkbox">Deterministic</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><a href="stream.md#single"><code>single()</code></a></td>
+         <td><code>mock data</code></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="stream.md#convert-fn"><code>convert()</code></a></td>
+         <td><a href="stream.md"><code>Stream</code></a> </td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="stream.md#apply-fn"><code>apply()</code></a></td>
+         <td><code>concrete stream type</code></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="stream.md#optional-percentage"><code>optional()</code></a></td>
+         <td><a href="stream.md"><code>Stream</code></a> </td>
+         <td>false</td>
+      </tr>
+      <tr>
+         <td><a href="stream.md#nullable-percentage"><code>nullable()</code></a></td>
+         <td><a href="stream.md"><code>Stream</code></a> </td>
+         <td>false</td>
+      </tr>
+      <tr>
+         <td><a href="stream.md#array-length"><code>array()</code></a></td>
+         <td><a href="array-stream.md"><code>ArrayStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="stream.md#format-template"><code>format()</code></a></td>
+         <td><a href="string-stream.md"><code>StringStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="stream.md#memo"><code>memo()</code></a></td>
+         <td><a href="stream.md"><code>Stream</code></a> </td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="stream.md#dump-fn"><code>dump()</code></a></td>
+         <td><a href="stream.md"><code>Stream</code></a> </td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="stream.md#getfactory"><code>getFactory()</code></a></td>
+         <td><code>decorated factory</code></td>
+         <td>true</td>
+      </tr>
+   </tbody>
+</table>
 
 ## single ()
 

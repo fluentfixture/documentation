@@ -2,7 +2,42 @@
 
 ``[`NumberSteam`](number-stream.md) extends the [`Stream`](stream.md) class for numeric operations.
 
-<table><thead><tr><th>Name</th><th>Returns</th><th data-type="checkbox">Deterministic</th></tr></thead><tbody><tr><td><a href="number-stream.md#add-num"><code>add()</code></a><code></code></td><td><a href="number-stream.md"><code>NumberSteam</code></a></td><td>true</td></tr><tr><td><a href="number-stream.md#subtract-num"><code>subtract()</code></a><code></code></td><td><a href="number-stream.md"><code>NumberSteam</code></a></td><td>true</td></tr><tr><td><a href="number-stream.md#multiply-num"><code>multiply()</code></a><code></code></td><td><a href="number-stream.md"><code>NumberSteam</code></a></td><td>true</td></tr><tr><td><a href="number-stream.md#divide-num"><code>divide()</code></a><code></code></td><td><a href="number-stream.md"><code>NumberSteam</code></a></td><td>true</td></tr><tr><td><a href="number-stream.md#mode-num"><code>mode()</code></a><code></code></td><td><a href="number-stream.md"><code>NumberSteam</code></a></td><td>true</td></tr></tbody></table>
+<table>
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Returns</th>
+         <th data-type="checkbox">Deterministic</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><a href="number-stream.md#add-num"><code>add()</code></a></td>
+         <td><a href="number-stream.md"><code>NumberSteam</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="number-stream.md#subtract-num"><code>subtract()</code></a></td>
+         <td><a href="number-stream.md"><code>NumberSteam</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="number-stream.md#multiply-num"><code>multiply()</code></a></td>
+         <td><a href="number-stream.md"><code>NumberSteam</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="number-stream.md#divide-num"><code>divide()</code></a></td>
+         <td><a href="number-stream.md"><code>NumberSteam</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="number-stream.md#mode-num"><code>mode()</code></a></td>
+         <td><a href="number-stream.md"><code>NumberSteam</code></a></td>
+         <td>true</td>
+      </tr>
+   </tbody>
+</table>
 
 ## add (num)
 

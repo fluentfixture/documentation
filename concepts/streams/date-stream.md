@@ -1,45 +1,172 @@
 # Date Stream
 
-{% hint style="info" %}
-The following code snippets contain constructors of the internal classes. In FluentFixture, there is no way to initialize these classes directly, but these code snippets help understand the core concepts of the library. These classes can be initialized by using factory methods, [generators](../generators/).
-{% endhint %}
-
 ``[`DateStream`](date-stream.md) extends the [`Stream`](stream.md) class for date operations.
 
-* ``[`addMilliseconds()`](date-stream.md#addmilliseconds-value)``
-* ``[`subtractMilliseconds()`](date-stream.md#subtractmilliseconds-value)``
-* ``[`setMilliseconds()`](date-stream.md#setmilliseconds-value)``
-* ``[`getMilliseconds()`](date-stream.md#getmilliseconds)``
-* ``[`addSeconds()`](date-stream.md#addseconds-value)``
-* ``[`subtractSeconds()`](date-stream.md#subtractseconds-value)``
-* ``[`setSeconds()`](date-stream.md#setseconds-value)``
-* ``[`getSeconds()`](date-stream.md#getseconds)``
-* ``[`addMinutes()`](date-stream.md#addminutes-value)``
-* ``[`subtractMinutes()`](date-stream.md#subtractminutes-value)``
-* ``[`setMinutes()`](date-stream.md#setminutes-value)``
-* ``[`getMinutes()`](date-stream.md#getminutes)``
-* ``[`addHours()`](date-stream.md#addhours-value)``
-* ``[`subtractHours()`](date-stream.md#subtracthours-value)``
-* ``[`setHours()`](date-stream.md#sethours-value)``
-* ``[`getHours()`](date-stream.md#gethours)``
-* ``[`addDays()`](date-stream.md#adddays-value)``
-* ``[`subtractDays()`](date-stream.md#subtractdays-value)``
-* ``[`setDaysOfWeek()`](date-stream.md#setdaysofweek-value)``
-* ``[`setDaysOfMonth()`](date-stream.md#setdaysofmonth-value)``
-* ``[`getDaysOfWeek()`](date-stream.md#getdaysofweek)``
-* ``[`getDaysOfMonth()`](date-stream.md#getdaysofmonth)``
-* ``[`addMonths()`](date-stream.md#addmonths-value)``
-* ``[`subtractMonths()`](date-stream.md#subtractmonths-value)``
-* ``[`setMonths()`](date-stream.md#setmonths-value)``
-* ``[`getMonths()`](date-stream.md#getmonths)``
-* ``[`addYears()`](date-stream.md#addyears-value)``
-* ``[`subtractYears()`](date-stream.md#subtractyears-value)``
-* ``[`setYears()`](date-stream.md#setyears-value)``
-* ``[`getYears()`](date-stream.md#getyears)``
+<table>
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Returns</th>
+         <th data-type="checkbox">Deterministic</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><a href="date-stream.md#addmilliseconds-value"><code>addMilliseconds()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#subtractmilliseconds-value"><code>subtractMilliseconds()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#setmilliseconds-value"><code>setMilliseconds()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#getmilliseconds"><code>getMilliseconds()</code></a></td>
+         <td><a href="number-stream.md"><code>NumberStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#addseconds-value"><code>addSeconds()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#subtractseconds-value"><code>subtractSeconds()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#setseconds-value"><code>setSeconds()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#getseconds"><code>getSeconds()</code></a></td>
+         <td><a href="number-stream.md"><code>NumberStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#addminutes-value"><code>addMinutes()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#subtractminutes-value"><code>subtractMinutes()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#setminutes-value"><code>setMinutes()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#getminutes"><code>getMinutes()</code></a></td>
+         <td><a href="number-stream.md"><code>NumberStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#addhours-value"><code>addHours()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#subtracthours-value"><code>subtractHours()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#sethours-value"><code>setHours()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#gethours"><code>getHours()</code></a></td>
+         <td><a href="number-stream.md"><code>NumberStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#adddays-value"><code>addDays()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#subtractdays-value"><code>subtractDays()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#setdaysofweek-value"><code>setDaysOfWeek()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#setdaysofmonth-value"><code>setDaysOfMonth()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#getdaysofweek"><code>getDaysOfWeek()</code></a></td>
+         <td><a href="number-stream.md"><code>NumberStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#getdaysofmonth"><code>getDaysOfMonth()</code></a></td>
+         <td><a href="number-stream.md"><code>NumberStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#addmonths-value"><code>addMonths()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#subtractmonths-value"><code>subtractMonths()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#setmonths-value"><code>setMonths()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#getmonths"><code>getMonths()</code></a></td>
+         <td><a href="number-stream.md"><code>NumberStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#addyears-value"><code>addYears()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#subtractyears-value"><code>subtractYears()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#setyears-value"><code>setYears()</code></a></td>
+         <td><a href="date-stream.md"><code>DateStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="date-stream.md#getyears"><code>getYears()</code></a></td>
+         <td><a href="number-stream.md"><code>NumberStream</code></a></td>
+         <td>true</td>
+      </tr>
+   </tbody>
+</table>
 
 ## addMilliseconds (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the add-milliseconds operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `add-milliseconds` operator.
 
 | Name    | Description                                |
 | ------- | ------------------------------------------ |
@@ -55,7 +182,7 @@ console.log(stream.single());
 
 ## subtractMilliseconds (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the subtract-milliseconds operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `subtract-milliseconds` operator.
 
 | Name    | Description                                     |
 | ------- | ----------------------------------------------- |
@@ -71,7 +198,7 @@ console.log(stream.single());
 
 ## setMilliseconds (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the set-milliseconds operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `set-milliseconds` operator.
 
 | Name    | Description                              |
 | ------- | ---------------------------------------- |
@@ -87,7 +214,7 @@ console.log(stream.single());
 
 ## getMilliseconds ()
 
-Creates a [`NumberSteam`](number-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the get-milliseconds operator.
+Creates a [`NumberSteam`](number-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `get-milliseconds` operator.
 
 ```typescript
 const stream = new DateStream(new ValueAdapter(new Date()))
@@ -99,7 +226,7 @@ console.log(stream.single());
 
 ## addSeconds (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the add-seconds operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `add-seconds` operator.
 
 | Name    | Description                           |
 | ------- | ------------------------------------- |
@@ -115,7 +242,7 @@ console.log(stream.single());
 
 ## subtractSeconds (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the subtract-seconds operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `subtract-seconds` operator.
 
 | Name    | Description                                |
 | ------- | ------------------------------------------ |
@@ -131,7 +258,7 @@ console.log(stream.single());
 
 ## setSeconds (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the set-seconds operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `set-seconds` operator.
 
 | Name    | Description                         |
 | ------- | ----------------------------------- |
@@ -147,7 +274,7 @@ console.log(stream.single());
 
 ## getSeconds ()
 
-Creates a [`NumberSteam`](number-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the get-seconds operator.
+Creates a [`NumberSteam`](number-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `get-seconds` operator.
 
 ```typescript
 const stream = new DateStream(new ValueAdapter(new Date()))
@@ -159,7 +286,7 @@ console.log(stream.single());
 
 ## addMinutes (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the add-minutes operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `add-minutes` operator.
 
 | Name    | Description                           |
 | ------- | ------------------------------------- |
@@ -175,7 +302,7 @@ console.log(stream.single());
 
 ## subtractMinutes (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the subtract-minutes operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `subtract-minutes` operator.
 
 | Name    | Description                                |
 | ------- | ------------------------------------------ |
@@ -191,7 +318,7 @@ console.log(stream.single());
 
 ## setMinutes (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the set-minutes operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `set-minutes` operator.
 
 | Name    | Description                         |
 | ------- | ----------------------------------- |
@@ -207,7 +334,7 @@ console.log(stream.single());
 
 ## getMinutes ()
 
-Creates a [`NumberSteam`](number-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the get-minutes operator.
+Creates a [`NumberSteam`](number-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `get-minutes` operator.
 
 ```typescript
 const stream = new DateStream(new ValueAdapter(new Date()))
@@ -219,7 +346,7 @@ console.log(stream.single());
 
 ## addHours (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the add-hours operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `add-hours` operator.
 
 | Name    | Description                         |
 | ------- | ----------------------------------- |
@@ -235,7 +362,7 @@ console.log(stream.single());
 
 ## subtractHours (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the subtract-hours operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `subtract-hours` operator.
 
 | Name    | Description                              |
 | ------- | ---------------------------------------- |
@@ -251,7 +378,7 @@ console.log(stream.single());
 
 ## setHours (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the set-hours operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `set-hours` operator.
 
 | Name    | Description                       |
 | ------- | --------------------------------- |
@@ -267,7 +394,7 @@ console.log(stream.single());
 
 ## getHours ()
 
-Creates a [`NumberSteam`](number-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the get-hours operator.
+Creates a [`NumberSteam`](number-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `get-hours` operator.
 
 ```typescript
 const stream = new DateStream(new ValueAdapter(new Date()))
@@ -279,7 +406,7 @@ console.log(stream.single());
 
 ## addDays (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the add-days operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `add-days` operator.
 
 | Name    | Description                        |
 | ------- | ---------------------------------- |
@@ -295,7 +422,7 @@ console.log(stream.single());
 
 ## subtractDays (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the subtract-days operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `subtract-days` operator.
 
 | Name    | Description                             |
 | ------- | --------------------------------------- |
@@ -311,7 +438,7 @@ console.log(stream.single());
 
 ## setDaysOfWeek (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the set-days-of-week operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `set-days-of-week` operator.
 
 | Name    | Description                              |
 | ------- | ---------------------------------------- |
@@ -327,7 +454,7 @@ console.log(stream.single());
 
 ## setDaysOfMonth (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the set-days-of-month operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `set-days-of-month` operator.
 
 | Name    | Description                               |
 | ------- | ----------------------------------------- |
@@ -343,7 +470,7 @@ console.log(stream.single());
 
 ## getDaysOfWeek ()
 
-Creates a [`NumberSteam`](number-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the get-days-of-week operator.
+Creates a [`NumberSteam`](number-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `get-days-of-week` operator.
 
 ```typescript
 const stream = new DateStream(new ValueAdapter(new Date()))
@@ -355,7 +482,7 @@ console.log(stream.single());
 
 ## getDaysOfMonth ()
 
-Creates a [`NumberSteam`](number-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the get-days-of-month operator.
+Creates a [`NumberSteam`](number-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `get-days-of-month` operator.
 
 ```typescript
 const stream = new DateStream(new ValueAdapter(new Date()))
@@ -367,7 +494,7 @@ console.log(stream.single());
 
 ## addMonths (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the add-months operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `add-months` operator.
 
 | Name    | Description                          |
 | ------- | ------------------------------------ |
@@ -383,7 +510,7 @@ console.log(stream.single());
 
 ## subtractMonths (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the subtract-months operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `subtract-months` operator.
 
 | Name    | Description                               |
 | ------- | ----------------------------------------- |
@@ -399,7 +526,7 @@ console.log(stream.single());
 
 ## setMonths (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the set-months operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `set-months` operator.
 
 | Name    | Description                        |
 | ------- | ---------------------------------- |
@@ -415,7 +542,7 @@ console.log(stream.single());
 
 ## getMonths ()
 
-Creates a [`NumberSteam`](number-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the get-months operator.
+Creates a [`NumberSteam`](number-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `get-months` operator.
 
 ```typescript
 const stream = new DateStream(new ValueAdapter(new Date()))
@@ -427,7 +554,7 @@ console.log(stream.single());
 
 ## addYears (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the add-years operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `add-years` operator.
 
 | Name    | Description                         |
 | ------- | ----------------------------------- |
@@ -443,7 +570,7 @@ console.log(stream.single());
 
 ## subtractYears (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the subtract-years operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `subtract-years` operator.
 
 | Name    | Description                              |
 | ------- | ---------------------------------------- |
@@ -459,7 +586,7 @@ console.log(stream.single());
 
 ## setYears (value)
 
-Creates a [`DateStream`](date-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the set-years operator.
+Creates a [`DateStream`](date-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `set-years` operator.
 
 | Name    | Description                       |
 | ------- | --------------------------------- |
@@ -475,7 +602,7 @@ console.log(stream.single());
 
 ## getYears ()
 
-Creates a [`NumberSteam`](number-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the get-years operator.
+Creates a [`NumberSteam`](number-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `get-years` operator.
 
 ```typescript
 const stream = new DateStream(new ValueAdapter(new Date()))

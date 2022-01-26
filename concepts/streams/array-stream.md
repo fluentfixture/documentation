@@ -1,21 +1,52 @@
 # Array Stream
 
-{% hint style="info" %}
-The following code snippets contain constructors of the internal classes. In FluentFixture, there is no way to initialize these classes directly, but these code snippets help understand the core concepts of the library. These classes can be initialized by using factory methods, [generators](../generators/).
-{% endhint %}
-
 ``[`ArrayStream`](array-stream.md) extends the [`Stream`](stream.md) class for array operations.
 
-* ``[`pick()`](array-stream.md#pick)``
-* ``[`sample()`](array-stream.md#sample-size)``
-* ``[`shuffle()`](array-stream.md#shuffle)``
-* ``[`map()`](array-stream.md#map-fn)``
-* ``[`filter()`](array-stream.md#filter-fn)``
-* ``[`sort()`](array-stream.md#sort-fn)``
+<table>
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Returns</th>
+         <th data-type="checkbox">Deterministic</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><a href="array-stream.md#pick"><code>pick()</code></a></td>
+         <td><a href="array-stream.md"><code>ArrayStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="array-stream.md#sample-size"><code>sample()</code></a></td>
+         <td><a href="array-stream.md"><code>ArrayStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="array-stream.md#shuffle"><code>shuffle()</code></a></td>
+         <td><a href="array-stream.md"><code>ArrayStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="array-stream.md#map"><code>map()</code></a></td>
+         <td><a href="array-stream.md"><code>ArrayStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="array-stream.md#filter-fn"><code>filter()</code></a></td>
+         <td><a href="array-stream.md"><code>ArrayStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="array-stream.md#sort-fn"><code>sort()</code></a></td>
+         <td><a href="array-stream.md"><code>ArrayStream</code></a></td>
+         <td>true</td>
+      </tr>
+   </tbody>
+</table>
 
 ## pick ()
 
-Creates a [`Stream`](stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the pick operator.
+Creates a [`Stream`](stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `pick` operator.
 
 ```typescript
 const stream = new ArrayStream(new ValueAdapter([1, 2, 3]))
@@ -27,7 +58,7 @@ console.log(stream.single());
 
 ## sample (size)
 
-Creates an [`ArrayStream`](array-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the sample operator. The result is the subset of the initial array.
+Creates an [`ArrayStream`](array-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `sample` operator. The result is the subset of the initial array.
 
 | Name   | Description                           |
 | ------ | ------------------------------------- |
@@ -43,7 +74,7 @@ console.log(stream.single());
 
 ## shuffle ()
 
-Creates an [`ArrayStream`](array-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the shuffle operator. The result array contains the same elements with the initial array but different order.
+Creates an [`ArrayStream`](array-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `shuffle` operator. The result array contains the same elements with the initial array but different order.
 
 ```typescript
 const stream = new ArrayStream(new ValueAdapter([1, 2, 3]))
@@ -55,7 +86,7 @@ console.log(stream.single());
 
 ## map (fn)
 
-Creates an [`ArrayStream`](array-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the map operator. This method works the same as how [Array#map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/map) works. The underlying type of the new stream is the same as the return type of the given map function.
+Creates an [`ArrayStream`](array-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `map` operator. This method works the same as how [Array#map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/map) works. The underlying type of the new stream is the same as the return type of the given map function.
 
 | Name | Description       |
 | ---- | ----------------- |
@@ -71,7 +102,7 @@ console.log(stream.single());
 
 ## filter (fn)
 
-Creates an [`ArrayStream`](array-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the filter operator. This method works the same as how [Array#filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/filter) works. The underlying type of the new stream is the same as the initial stream.
+Creates an [`ArrayStream`](array-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `filter` operator. This method works the same as how [Array#filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/filter) works. The underlying type of the new stream is the same as the initial stream.
 
 | Name | Description          |
 | ---- | -------------------- |
@@ -87,7 +118,7 @@ console.log(stream.single());
 
 ## sort (fn)
 
-Creates an [`ArrayStream`](array-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the sort operator. This method works the same as how [Array#sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/sort) works. The underlying type of the new stream is the same as the initial stream.
+Creates an [`ArrayStream`](array-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `sort` operator. This method works the same as how [Array#sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/sort) works. The underlying type of the new stream is the same as the initial stream.
 
 | Name | Description                                                            |
 | ---- | ---------------------------------------------------------------------- |

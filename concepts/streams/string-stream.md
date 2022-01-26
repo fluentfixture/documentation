@@ -1,31 +1,198 @@
 # String Stream
 
-{% hint style="info" %}
-The following code snippets contain constructors of the internal classes. In FluentFixture, there is no way to initialize these classes directly, but these code snippets help understand the core concepts of the library. These classes can be initialized by using factory methods, [generators](../generators/).
-{% endhint %}
-
 ``[`StringStream`](string-stream.md) extends the [`Stream`](stream.md) class for string operations.
 
-* ``[`trim()`](string-stream.md#trim)``
-* ``[`trimStart()`](string-stream.md#trimstart)``
-* ``[`trimEnd()`](string-stream.md#trimend)``
-* ``[`padStart()`](string-stream.md#padstart-length-str)``
-* ``[`padEnd()`](string-stream.md#padend-length-str)``
-* ``[`lowerCase()`](string-stream.md#lowercase)``
-* ``[`upperCase()`](string-stream.md#uppercase)``
-* ``[`camelCase()`](string-stream.md#camelcase)``
-* ``[`capitalCase()`](string-stream.md#capitalcase)``
-* ``[`constantCase()`](string-stream.md#constantcase)``
-* ``[`dotCase()`](string-stream.md#dotcase)``
-* ``[`headerCase()`](string-stream.md#headercase)``
-* ``[`paramCase()`](string-stream.md#paramcase)``
-* ``[`pascalCase()`](string-stream.md#pascalcase)``
-* ``[`snakeCase()`](string-stream.md#snakecase)``
-* ``[`pathCase()`](string-stream.md#pathcase)``
+<table>
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Returns</th>
+         <th data-type="checkbox">Deterministic</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>
+            <a href="string-stream.md#trim"><code>trim()</code></a>
+         </td>
+         <td>
+            <a href="string-stream.md"><code>StringStream</code></a>
+         </td>
+         <td>
+            true
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <a href="string-stream.md#trimstart"><code>trimStart()</code></a>
+         </td>
+         <td>
+            <a href="string-stream.md"><code>StringStream</code></a>
+         </td>
+         <td>
+            true
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <a href="string-stream.md#trimend"><code>trimEnd()</code></a>
+         </td>
+         <td>
+            <a href="string-stream.md"><code>StringStream</code></a>
+         </td>
+         <td>
+            true
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <a href="string-stream.md#padstart-length-str"><code>padStart()</code></a>
+         </td>
+         <td>
+            <a href="string-stream.md"><code>StringStream</code></a>
+         </td>
+         <td>
+            true
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <a href="string-stream.md#padend-length-str"><code>padEnd()</code></a>
+         </td>
+         <td>
+            <a href="string-stream.md"><code>StringStream</code></a>
+         </td>
+         <td>
+            true
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <a href="string-stream.md#lowercase"><code>lowerCase()</code></a>
+         </td>
+         <td>
+            <a href="string-stream.md"><code>StringStream</code></a>
+         </td>
+         <td>
+            true
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <a href="string-stream.md#uppercase"><code>upperCase()</code></a>
+         </td>
+         <td>
+            <a href="string-stream.md"><code>StringStream</code></a>
+         </td>
+         <td>
+            true
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <a href="string-stream.md#camelcase"><code>camelCase()</code></a>
+         </td>
+         <td>
+            <a href="string-stream.md"><code>StringStream</code></a>
+         </td>
+         <td>
+            true
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <a href="string-stream.md#capitalcase"><code>capitalCase()</code></a>
+         </td>
+         <td>
+            <a href="string-stream.md"><code>StringStream</code></a>
+         </td>
+         <td>
+            true
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <a href="string-stream.md#constantcase"><code>constantCase()</code></a>
+         </td>
+         <td>
+            <a href="string-stream.md"><code>StringStream</code></a>
+         </td>
+         <td>
+            true
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <a href="string-stream.md#dotcase"><code>dotCase()</code></a>
+         </td>
+         <td>
+            <a href="string-stream.md"><code>StringStream</code></a>
+         </td>
+         <td>
+            true
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <a href="string-stream.md#headercase"><code>headerCase()</code></a>
+         </td>
+         <td>
+            <a href="string-stream.md"><code>StringStream</code></a>
+         </td>
+         <td>
+            true
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <a href="string-stream.md#paramcase"><code>paramCase()</code></a>
+         </td>
+         <td>
+            <a href="string-stream.md"><code>StringStream</code></a>
+         </td>
+         <td>
+            true
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <a href="string-stream.md#pascalcase"><code>pascalCase()</code></a>
+         </td>
+         <td>
+            <a href="string-stream.md"><code>StringStream</code></a>
+         </td>
+         <td>
+            true
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <a href="string-stream.md#snakecase"><code>snakeCase()</code></a>
+         </td>
+         <td>
+            <a href="string-stream.md"><code>StringStream</code></a>
+         </td>
+         <td>
+            true
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <a href="string-stream.md#pathcase"><code>pathCase()</code></a>
+         </td>
+         <td>
+            <a href="string-stream.md"><code>StringStream</code></a>
+         </td>
+         <td>
+            true
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 ## trim ()
 
-Creates a [`StringStream`](string-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the trim operator.
+Creates a [`StringStream`](string-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `trim` operator.
 
 ```typescript
 const stream = new StringStream(new ValueAdapter(' lorem ipsum '))
@@ -37,7 +204,7 @@ console.log(stream.single());
 
 ## trimStart ()
 
-Creates a [`StringStream`](string-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the trim-start operator.
+Creates a [`StringStream`](string-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `trim-start` operator.
 
 ```typescript
 const stream = new StringStream(new ValueAdapter(' lorem ipsum '))
@@ -49,7 +216,7 @@ console.log(stream.single());
 
 ## trimEnd ()
 
-Creates a [`StringStream`](string-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the trim-end operator.
+Creates a [`StringStream`](string-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `trim-end` operator.
 
 ```typescript
 const stream = new StringStream(new ValueAdapter(' lorem ipsum '))
@@ -61,7 +228,7 @@ console.log(stream.single());
 
 ## padStart (length, str)
 
-Creates a [`StringStream`](string-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the pad-start operator.
+Creates a [`StringStream`](string-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `pad-start` operator.
 
 | Name     | Description                             |
 | -------- | --------------------------------------- |
@@ -78,7 +245,7 @@ console.log(stream.single());
 
 ## padEnd (length, str)
 
-Creates a [`StringStream`](string-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the pad-end operator.
+Creates a [`StringStream`](string-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `pad-end` operator.
 
 | Name     | Description                             |
 | -------- | --------------------------------------- |
@@ -95,7 +262,7 @@ console.log(stream.single());
 
 ## lowerCase ()
 
-Creates a [`StringStream`](string-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the lower-case operator.
+Creates a [`StringStream`](string-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `lower-case` operator.
 
 ```typescript
 const stream = new StringStream(new ValueAdapter('LOREM IPSUM'))
@@ -107,7 +274,7 @@ console.log(stream.single());
 
 ## upperCase ()
 
-Creates a [`StringStream`](string-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the upper-case operator.
+Creates a [`StringStream`](string-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `upper-case` operator.
 
 ```typescript
 const stream = new StringStream(new ValueAdapter('lorem ipsum'))
@@ -119,7 +286,7 @@ console.log(stream.single());
 
 ## camelCase ()
 
-Creates a [`StringStream`](string-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the camel-case operator.
+Creates a [`StringStream`](string-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `camel-case` operator.
 
 ```typescript
 const stream = new StringStream(new ValueAdapter('lorem ipsum'))
@@ -131,7 +298,7 @@ console.log(stream.single());
 
 ## capitalCase ()
 
-Creates a [`StringStream`](string-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the capital-case operator.
+Creates a [`StringStream`](string-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `capital-case` operator.
 
 ```typescript
 const stream = new StringStream(new ValueAdapter('lorem ipsum'))
@@ -143,7 +310,7 @@ console.log(stream.single());
 
 ## constantCase ()
 
-Creates a [`StringStream`](string-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the constant-case operator.
+Creates a [`StringStream`](string-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the c`onstant-case` operator.
 
 ```typescript
 const stream = new StringStream(new ValueAdapter('lorem ipsum'))
@@ -155,7 +322,7 @@ console.log(stream.single());
 
 ## dotCase ()
 
-Creates a [`StringStream`](string-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the dot-case operator.
+Creates a [`StringStream`](string-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `dot-case` operator.
 
 ```typescript
 const stream = new StringStream(new ValueAdapter('lorem ipsum'))
@@ -167,7 +334,7 @@ console.log(stream.single());
 
 ## headerCase ()
 
-Creates a [`StringStream`](string-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the header-case operator.
+Creates a [`StringStream`](string-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `header-case` operator.
 
 ```typescript
 const stream = new StringStream(new ValueAdapter('lorem ipsum'))
@@ -179,7 +346,7 @@ console.log(stream.single());
 
 ## paramCase ()
 
-Creates a [`StringStream`](string-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the param-case operator.
+Creates a [`StringStream`](string-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `param-case` operator.
 
 ```typescript
 const stream = new StringStream(new ValueAdapter('lorem ipsum'))
@@ -191,7 +358,7 @@ console.log(stream.single());
 
 ## pascalCase ()
 
-Creates a [`StringStream`](string-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the pascal-case operator.
+Creates a [`StringStream`](string-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `pascal-case` operator.
 
 ```typescript
 const stream = new StringStream(new ValueAdapter('lorem ipsum'))
@@ -203,7 +370,7 @@ console.log(stream.single());
 
 ## snakeCase ()
 
-Creates a [`StringStream`](string-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the snake-case operator.
+Creates a [`StringStream`](string-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `snake-case` operator.
 
 ```typescript
 const stream = new StringStream(new ValueAdapter('lorem ipsum'))
@@ -215,7 +382,7 @@ console.log(stream.single());
 
 ## pathCase ()
 
-Creates a [`StringStream`](string-stream.md) with a [`Functional`](../factories/decorators/functional.md) decorator and the path-case operator.
+Creates a [`StringStream`](string-stream.md) with [`Functional`](../factories/decorators/functional.md) decorator and the `path-case` operator.
 
 ```typescript
 const stream = new StringStream(new ValueAdapter('lorem ipsum'))
