@@ -12,7 +12,7 @@ This section covers object-related generator functions.
    </thead>
    <tbody>
       <tr>
-         <td><a href="object-generators.md#obj-model"><code>pick()</code></a></td>
+         <td><a href="object-generators.md#obj-model"><code>obj()</code></a></td>
          <td><a href="../streams/object-stream.md"><code>ObjectStream</code></a></td>
          <td>true</td>
       </tr>
