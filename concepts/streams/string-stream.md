@@ -1,6 +1,6 @@
 # String Stream
 
-``[`StringStream`](string-stream.md) extends the [`Stream`](stream.md) class for string operations.
+[`StringStream`](string-stream.md) extends the [`Stream`](stream.md) class for string operations.
 
 <table>
    <thead>

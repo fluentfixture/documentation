@@ -1,14 +1,37 @@
 # Object Stream
 
-``[`ObjectStream`](object-stream.md) extends the [`Stream`](stream.md) class for object operations.
+[`ObjectStream`](object-stream.md) extends the [`Stream`](stream.md) class for object operations.
 
-* ``[`dynamic()`](object-stream.md#dynamic-property-factory)``
-* ``[`static()`](object-stream.md#static-property-value)``
-* ``[`lazy()`](object-stream.md#lazy-property-fn)``
+<table>
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>Returns</th>
+         <th data-type="checkbox">Deterministic</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><a href="object-stream.md#dynamic-property-factory"><code>dynamic()</code></a></td>
+         <td><a href="object-stream.md"><code>ObjectStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="object-stream.md#static-property-value"><code>static()</code></a></td>
+         <td><a href="object-stream.md"><code>ObjectStream</code></a></td>
+         <td>true</td>
+      </tr>
+      <tr>
+         <td><a href="object-stream.md#lazy-property-fn"><code>lazy()</code></a></td>
+         <td><a href="object-stream.md"><code>ObjectStream</code></a></td>
+         <td>true</td>
+      </tr>
+   </tbody>
+</table>
 
 ## dynamic (property, factory)
 
-Creates an [`ObjectStream`](object-stream.md) with a new or overwritten property with the given factory according to the given key.&#x20;
+Creates an [`ObjectStream`](object-stream.md) with [`Property`](../factories/decorators/property.md) decorator, the given property and factory.
 
 | Name       | Description                         |
 | ---------- | ----------------------------------- |
@@ -32,7 +55,7 @@ console.log(stream.single());
 
 ## static (property, value)
 
-Creates an [`ObjectStream`](object-stream.md) with a new or overwritten property with the given value according to the given key.&#x20;
+Creates an [`ObjectStream`](object-stream.md) with [`Property`](../factories/decorators/property.md) decorator, the given property and value.
 
 | Name       | Description                |
 | ---------- | -------------------------- |
@@ -56,7 +79,7 @@ console.log(stream.single());
 
 ## lazy (property, fn)
 
-Creates an [`ObjectStream`](object-stream.md) with a new or overwritten property with a function that takes the previous state of the mock data according to the given key. It is handy for generating conditional mock data.
+Creates an [`ObjectStream`](object-stream.md) with [`Lazy`](../factories/decorators/lazy.md) decorator, the given property and function.
 
 | Name       | Description                          |
 | ---------- | ------------------------------------ |

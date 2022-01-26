@@ -1,6 +1,6 @@
 # Stream
 
-``[`Stream`](stream.md) is the superclass of all stream types.
+[`Stream`](stream.md) is the superclass of all stream types.
 
 <table>
    <thead>

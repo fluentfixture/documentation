@@ -1,6 +1,6 @@
 # Boolean Stream
 
-``[`BooleanStream`](boolean-stream.md) extends the [`Stream`](stream.md)  class for boolean operations.
+[`BooleanStream`](boolean-stream.md) extends the [`Stream`](stream.md)  class for boolean operations.
 
 <table>
    <thead>

@@ -1,6 +1,6 @@
 # Date Stream
 
-``[`DateStream`](date-stream.md) extends the [`Stream`](stream.md) class for date operations.
+[`DateStream`](date-stream.md) extends the [`Stream`](stream.md) class for date operations.
 
 <table>
    <thead>

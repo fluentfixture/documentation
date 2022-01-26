@@ -1,6 +1,6 @@
 # Array Stream
 
-``[`ArrayStream`](array-stream.md) extends the [`Stream`](stream.md) class for array operations.
+[`ArrayStream`](array-stream.md) extends the [`Stream`](stream.md) class for array operations.
 
 <table>
    <thead>

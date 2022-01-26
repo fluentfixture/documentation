@@ -1,6 +1,6 @@
 # Number Stream
 
-``[`NumberSteam`](number-stream.md) extends the [`Stream`](stream.md) class for numeric operations.
+[`NumberSteam`](number-stream.md) extends the [`Stream`](stream.md) class for numeric operations.
 
 <table>
    <thead>
