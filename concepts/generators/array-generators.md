@@ -2,9 +2,9 @@
 
 This section covers array-related generator functions.
 
-* ``[`pick()`](array-generators.md#pick-array)``
-* ``[`take()`](array-generators.md#take-array-count)``
-* ``[`shuffle()`](array-generators.md#shuffle-array)``
+* [`pick()`](array-generators.md#pick-array)
+* [`take()`](array-generators.md#take-array-count)
+* [`shuffle()`](array-generators.md#shuffle-array)
 
 ## pick (array)
 

@@ -1,6 +1,6 @@
 # String Factory
 
-``[`StringFactory`](string-factory.md) generates a `string` by using the given charset and length.
+[`StringFactory`](string-factory.md) generates a `string` by using the given charset and length.
 
 | Name      | Description                                |
 | --------- | ------------------------------------------ |
@@ -13,7 +13,7 @@
 
 ## Charsets
 
-``[`StringFactory`](string-factory.md) support the following charsets:
+[`StringFactory`](string-factory.md) support the following charsets:
 
 | Charset        | Output                |
 | -------------- | --------------------- |

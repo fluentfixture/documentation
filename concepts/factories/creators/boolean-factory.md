@@ -1,6 +1,6 @@
 # Boolean Factory
 
-``[`BooleanFactory`](boolean-factory.md) generates a `boolean` by using the given percentage.
+[`BooleanFactory`](boolean-factory.md) generates a `boolean` by using the given percentage.
 
 | Name         | Description                                                      |
 | ------------ | ---------------------------------------------------------------- |

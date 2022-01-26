@@ -2,10 +2,10 @@
 
 This section covers date-related generator functions.
 
-* ``[`date()`](date-generators.md#date-min-max)``
-* ``[`now()`](date-generators.md#now)``
-* ``[`yesterday()`](date-generators.md#yesterday)``
-* ``[`tomorrow()`](date-generators.md#yesterday-1)``
+* [`date()`](date-generators.md#date-min-max)
+* [`now()`](date-generators.md#now)
+* [`yesterday()`](date-generators.md#yesterday)
+* [`tomorrow()`](date-generators.md#yesterday-1)
 
 ## date (min, max)
 

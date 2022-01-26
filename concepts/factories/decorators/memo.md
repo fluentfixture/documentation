@@ -9,7 +9,7 @@
 | `factory` | The factory to be decorated. |
 
 {% hint style="info" %}
-``[`Memo`](memo.md) decorator is used with [streams](../../streams/) mainly. Advanced examples can be found in the [optimization](../../../fundamentals/optimization.md) section.
+[`Memo`](memo.md) decorator is used with [streams](../../streams/) mainly. Advanced examples can be found in the [optimization](../../../fundamentals/optimization.md) section.
 {% endhint %}
 
 ## Example

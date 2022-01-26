@@ -1,6 +1,6 @@
 # Date Factory
 
-``[`DateFactory`](date-factory.md) generates a `date` within the given boundary.
+[`DateFactory`](date-factory.md) generates a `date` within the given boundary.
 
 | Name  | Description                  |
 | ----- | ---------------------------- |

@@ -1,6 +1,6 @@
 # Iterator
 
-``[`Iterator`](iterator.md) decorator decorates a factory with the given count. When the `single()` method is invoked, it generates data using the decorated factory many times.
+[`Iterator`](iterator.md) decorator decorates a factory with the given count. When the `single()` method is invoked, it generates data using the decorated factory many times.
 
 | Name      | Description                  |
 | --------- | ---------------------------- |

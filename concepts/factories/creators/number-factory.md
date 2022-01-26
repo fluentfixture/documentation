@@ -1,6 +1,6 @@
 # Number Factory
 
-``[`NumberFactory`](number-factory.md) generates a `float` within the given boundary.
+[`NumberFactory`](number-factory.md) generates a `float` within the given boundary.
 
 | Name  | Description                  |
 | ----- | ---------------------------- |

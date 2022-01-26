@@ -1,6 +1,6 @@
 # Object Factory
 
-``[`ObjectFactory`](object-factory.md) generates an `object` by using the given model.
+[`ObjectFactory`](object-factory.md) generates an `object` by using the given model.
 
 | Name    | Description                                 |
 | ------- | ------------------------------------------- |

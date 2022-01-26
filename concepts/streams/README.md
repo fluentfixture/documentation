@@ -38,14 +38,14 @@ Streams also provide data-type-specific operations. For this reason, FluentFixtu
 
 | Name                                     | Type      |
 | ---------------------------------------- | --------- |
-| ``[`Stream`](stream.md)``                | `any`     |
-| ``[`BooleanStream`](boolean-stream.md)`` | `boolean` |
-| ``[`NumberStream`](number-stream.md)``   | `number`  |
-| ``[`StringStream`](string-stream.md)``   | `string`  |
-| ``[`DateStream`](date-stream.md)``       | `date`    |
-| ``[`ObjectStream`](object-stream.md)``   | `object`  |
-| ``[`ArrayStream`](array-stream.md)``     | `array`   |
+| [`Stream`](stream.md)                | `any`     |
+| [`BooleanStream`](boolean-stream.md) | `boolean` |
+| [`NumberStream`](number-stream.md)   | `number`  |
+| [`StringStream`](string-stream.md)   | `string`  |
+| [`DateStream`](date-stream.md)       | `date`    |
+| [`ObjectStream`](object-stream.md)   | `object`  |
+| [`ArrayStream`](array-stream.md)     | `array`   |
 
 ## Conclusion
 
-Streams provide a fluent interface, and there are many stream types according to underlying data type. In the following chapters, stream types are covered. After the stream types, short-hand stream builder functions called generators are introduced.
+Streams provide a fluent interface, and there are many stream types according to underlying data type. In the following chapters, stream types are covered. After the stream types, short-hand stream builder functions called [generators](../generators/) are introduced.

@@ -2,9 +2,9 @@
 
 This section covers boolean-related generator functions.
 
-* ``[`bool()`](boolean-generators.md#bool-percentage)``
-* ``[`truthy()`](boolean-generators.md#truthy)``
-* ``[`falsy()`](boolean-generators.md#falsy)``
+* [`bool()`](boolean-generators.md#bool-percentage)
+* [`truthy()`](boolean-generators.md#truthy)
+* [`falsy()`](boolean-generators.md#falsy)
 
 ## bool (percentage)
 

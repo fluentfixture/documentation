@@ -1,6 +1,6 @@
 # Property
 
-``[`Property`](property.md) decorator decorates a property of an object factory with the given factory and property. When the `single()` method is invoked, it generates data using the decorated factory and changes the property with the result of the decorator factory.
+[`Property`](property.md) decorator decorates a property of an object factory with the given factory and property. When the `single()` method is invoked, it generates data using the decorated factory and changes the property with the result of the decorator factory.
 
 | Name        | Description                         |
 | ----------- | ----------------------------------- |

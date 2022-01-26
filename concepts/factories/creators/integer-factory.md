@@ -1,6 +1,6 @@
 # Integer Factory
 
-``[`IntegerFactory`](integer-factory.md) generates an `integer` within the given boundary.
+[`IntegerFactory`](integer-factory.md) generates an `integer` within the given boundary.
 
 | Name  | Description                  |
 | ----- | ---------------------------- |

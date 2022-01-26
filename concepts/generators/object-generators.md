@@ -2,7 +2,7 @@
 
 This section covers object-related generator functions.
 
-* ``[`obj()`](object-generators.md#obj-model)``
+* [`obj()`](object-generators.md#obj-model)
 
 ## obj (model)
 

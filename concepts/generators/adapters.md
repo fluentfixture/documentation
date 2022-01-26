@@ -2,10 +2,10 @@
 
 This section covers adapter-kind generator functions.
 
-* ``[`nil()`](adapters.md#nil)``
-* ``[`undef()`](adapters.md#undef)``
-* ``[`val()`](adapters.md#val-value)``
-* ``[`from()`](adapters.md#from-fn)``
+* [`nil()`](adapters.md#nil)
+* [`undef()`](adapters.md#undef)
+* [`val()`](adapters.md#val-value)
+* [`from()`](adapters.md#from-fn)
 
 ## nil ()
 

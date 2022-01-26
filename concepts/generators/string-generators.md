@@ -2,14 +2,14 @@
 
 This section covers string-related generator functions.
 
-* ``[`text()`](string-generators.md#text-str)``
-* ``[`str()`](string-generators.md#str-length)``
-* ``[`hex()`](string-generators.md#hex-length)``
-* ``[`binary()`](string-generators.md#binary-length)``
-* ``[`octal()`](string-generators.md#octal-length)``
-* ``[`numeric()`](string-generators.md#numeric-length)``
-* ``[`alphabetic()`](string-generators.md#alphabetic-length)``
-* ``[`alphanumeric()`](string-generators.md#str-length-1)``
+* [`text()`](string-generators.md#text-str)
+* [`str()`](string-generators.md#str-length)
+* [`hex()`](string-generators.md#hex-length)
+* [`binary()`](string-generators.md#binary-length)
+* [`octal()`](string-generators.md#octal-length)
+* [`numeric()`](string-generators.md#numeric-length)
+* [`alphabetic()`](string-generators.md#alphabetic-length)
+* [`alphanumeric()`](string-generators.md#str-length-1)
 
 ## text (str)
 

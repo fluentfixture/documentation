@@ -2,11 +2,11 @@
 
 This section covers number-related generator functions.
 
-* ``[`real()`](number-generators.md#real-min-max)``
-* ``[`int()`](number-generators.md#int-min-max)``
-* ``[`num()`](number-generators.md#num-val)``
-* ``[`one()`](number-generators.md#one)``
-* ``[`zero()`](number-generators.md#zero)``
+* [`real()`](number-generators.md#real-min-max)
+* [`int()`](number-generators.md#int-min-max)
+* [`num()`](number-generators.md#num-val)
+* [`one()`](number-generators.md#one)
+* [`zero()`](number-generators.md#zero)
 
 ## real (min, max)
 
