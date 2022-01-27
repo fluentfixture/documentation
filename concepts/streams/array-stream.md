@@ -14,17 +14,17 @@
       <tr>
          <td><a href="array-stream.md#pick"><code>pick()</code></a></td>
          <td><a href="array-stream.md"><code>ArrayStream</code></a></td>
-         <td>true</td>
+         <td>false</td>
       </tr>
       <tr>
          <td><a href="array-stream.md#sample-size"><code>sample()</code></a></td>
          <td><a href="array-stream.md"><code>ArrayStream</code></a></td>
-         <td>true</td>
+         <td>false</td>
       </tr>
       <tr>
          <td><a href="array-stream.md#shuffle"><code>shuffle()</code></a></td>
          <td><a href="array-stream.md"><code>ArrayStream</code></a></td>
-         <td>true</td>
+         <td>false</td>
       </tr>
       <tr>
          <td><a href="array-stream.md#map"><code>map()</code></a></td>
