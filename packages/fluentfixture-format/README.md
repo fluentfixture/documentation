@@ -11,3 +11,9 @@ A flexible string format library that is a part of the [@fluentfixture](https://
 ```bash
 npm install @fluentfixture/format
 ```
+
+### How to Use?
+
+{% content-ref url="usage.md" %}
+[usage.md](usage.md)
+{% endcontent-ref %}
