@@ -9,5 +9,5 @@
 
 ***
 
-* [Contribution](https://github.com/fluentfixture)
-* [Follow me on Twitter :)](https://twitter.com/scokmen)
+* [🫂 Contribution](https://github.com/fluentfixture)
+* [🐦 Follow me on Twitter :)](https://twitter.com/scokmen)
