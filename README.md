@@ -20,10 +20,10 @@ The [@fluentfixture](https://github.com/fluentfixture) does not provide predefin
 
 ## Packages
 
-|                                                                                                   |                           | Version                                                                                                 |
-| ------------------------------------------------------------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------- |
-| [@fluentfixture/core](https://github.com/fluentfixture/fluentfixture/tree/main/packages/core)     | Core modules and packages | ![npm version](https://badge.fury.io/js/@fluentfixture%2Fcore.svg)                                      |
-| [@fluentfixture/format](https://github.com/fluentfixture/fluentfixture/tree/main/packages/format) | String format library     | <img src="https://badge.fury.io/js/@fluentfixture%2Fformat.svg" alt="npm version" data-size="original"> |
+|                                                           |                           | Version                                                                                                 |
+| --------------------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------- |
+| [@fluentfixture/core](packages/fluentfixture-core.md)     | Core modules and packages | ![npm version](https://badge.fury.io/js/@fluentfixture%2Fcore.svg)                                      |
+| [@fluentfixture/format](packages/fluentfixture-format.md) | String format library     | <img src="https://badge.fury.io/js/@fluentfixture%2Fformat.svg" alt="npm version" data-size="original"> |
 
 ## Follow Us!
 
