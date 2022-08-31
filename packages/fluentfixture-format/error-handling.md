@@ -24,12 +24,14 @@ Transformation errors occur while invoking a transformation method. By default, 
 
 #### With IgnoreErrors Flag
 
-<pre class="language-typescript"><code class="lang-typescript">import { Formatter, Pipes } from '@fluentfixture/format';
-<strong>
-</strong><strong>const formatter = Formatter.create(Pipes.withDefaults(), { ignoreErrors: true });
-</strong>
+```typescript
+import { Formatter, Pipes } from '@fluentfixture/format';
+
+const formatter = Formatter.create(Pipes.withDefaults(), { ignoreErrors: true });
+
 formatter.format('ITEMS = ${items:join("+")}', { });
-// ITEMS = </code></pre>
+// ITEMS = 
+```
 
 #### Without IgnoreErrors Flag
 
