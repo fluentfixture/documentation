@@ -6,6 +6,8 @@
 
 * [@fluentfixture/format](packages/fluentfixture-format/README.md)
   * [Simple Formatting](packages/fluentfixture-format/simple-formatting.md)
+  * [Transformations](packages/fluentfixture-format/transformations.md)
+  * [Custom Transformations](packages/fluentfixture-format/custom-transformations.md)
 * [@fluentfixture/core](packages/fluentfixture-core.md)
 
 ***
