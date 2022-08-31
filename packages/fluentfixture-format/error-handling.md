@@ -18,9 +18,9 @@ format('${padStart()}', {}); // missing semicolon at the index 0.
 format("${:split(',')}", {}); // single quotes are not supported.
 ```
 
-### Transformation Errors.
+### Transformation Errors
 
-Transformation errors occur while invoking a transformation method. By default, these kind of errors is handled by the library.
+Transformation errors occur while invoking a transformation method. By default, these kinds of errors are handled by the library.
 
 #### With IgnoreErrors Flag
 
