@@ -14,6 +14,6 @@ npm install @fluentfixture/format
 
 ### How to Use?
 
-{% content-ref url="introduction.md" %}
-[introduction.md](introduction.md)
+{% content-ref url="how-to-use.md" %}
+[how-to-use.md](how-to-use.md)
 {% endcontent-ref %}
