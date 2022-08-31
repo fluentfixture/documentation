@@ -21,3 +21,25 @@ Formatting syntax consists of two parts: `${path:pipe-1|pipe-2|...|pipe-n}`
 {% hint style="info" %}
 Using the `compile` is extremely fast according to the `format` method for repeating usages.
 {% endhint %}
+
+```typescript
+import { format, compile, formatter } from '@fluentfixture/format';
+
+const source = {
+  name: 'john',
+  surname: 'doe',
+  balance: {
+    amount: 120,
+    currency: 'USD'
+  },
+  memberships: ['regular user', 'pro user']
+};
+
+format('${name:capitalCase()}.${surname:upperCase()} > MEMBERSHIP=${memberships.0:dotCase()}', source);
+// returns "John.DOE > MEMBERSHIP=regular.user"
+
+const template = compile('${name:capitalCase()}.${surname:upperCase()} > MEMBERSHIP=${memberships.0:dotCase()}');
+
+template(source);
+// returns "John.DOE > MEMBERSHIP=regular.user"
+```
