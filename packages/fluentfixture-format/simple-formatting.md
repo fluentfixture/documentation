@@ -23,7 +23,7 @@ Using the `compile` is extremely fast according to the `format` method for repea
 {% endhint %}
 
 ```typescript
-import { format, compile, formatter } from '@fluentfixture/format';
+import { format } from '@fluentfixture/format';
 
 const source = {
   name: 'john',
@@ -32,14 +32,13 @@ const source = {
     amount: 120,
     currency: 'USD'
   },
-  memberships: ['regular user', 'pro user']
+  memberships: ['regular', 'starter']
 };
 
-format('${name:capitalCase()}.${surname:upperCase()} > MEMBERSHIP=${memberships.0:dotCase()}', source);
-// returns "John.DOE > MEMBERSHIP=regular.user"
+format('${name:capitalCase()}.${surname:upperCase()} > MEMBERSHIP-1=${memberships.0}', source);
+// John.DOE > MEMBERSHIP-1=regular
 
-const template = compile('${name:capitalCase()}.${surname:upperCase()} > MEMBERSHIP=${memberships.0:dotCase()}');
 
-template(source);
-// returns "John.DOE > MEMBERSHIP=regular.user"
+format('${surname:upperCase()|padEnd(5, "#")} > MEMBERSHIPS=${memberships:join("+")}', source);
+// DOE## > MEMBERSHIPS=regular+starter
 ```
