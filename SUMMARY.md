@@ -5,7 +5,7 @@
 ## ♥ PACKAGES
 
 * [@fluentfixture/format](packages/fluentfixture-format/README.md)
-  * [Usage](packages/fluentfixture-format/usage.md)
+  * [Introduction](packages/fluentfixture-format/introduction.md)
 * [@fluentfixture/core](packages/fluentfixture-core.md)
 
 ***
