@@ -1,4 +1,4 @@
-# How to Use?
+# Simple Formatting
 
 ### Syntax
 
@@ -14,7 +14,7 @@ Formatting syntax consists of two parts: `${path:pipe-1|pipe-2|...|pipe-n}`
 | `${key:trim()\|padLeft(5)}` | `obj.key` | `trim()` , `padLeft(5)` |
 | `${:trim()\|split(",")}`    | `obj`     | `trim()` , `split(",")` |
 
-### Simple Formatting
+### Example
 
 [@fluentfixture/format](./) provides two global methods and one default instance with default configurations: `format` , `compile`, and the `formatter`. The `format` produces the formatted string immediately. Differently, `compile` returns a pre-compiled template for reuse.
 
