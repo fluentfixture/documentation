@@ -12,8 +12,20 @@ A flexible string format library that is a part of the [@fluentfixture](https://
 npm install @fluentfixture/format
 ```
 
-### How to Use?
+### What's Next?
 
 {% content-ref url="simple-formatting.md" %}
 [simple-formatting.md](simple-formatting.md)
+{% endcontent-ref %}
+
+{% content-ref url="transformations.md" %}
+[transformations.md](transformations.md)
+{% endcontent-ref %}
+
+{% content-ref url="custom-transformations.md" %}
+[custom-transformations.md](custom-transformations.md)
+{% endcontent-ref %}
+
+{% content-ref url="error-handling.md" %}
+[error-handling.md](error-handling.md)
 {% endcontent-ref %}
