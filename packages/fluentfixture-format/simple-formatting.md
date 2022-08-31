@@ -14,7 +14,7 @@ Formatting syntax consists of two parts: `${path:pipe-1|pipe-2|...|pipe-n}`
 | `${key:trim()\|padLeft(5)}` | `obj.key` | `trim()` , `padLeft(5)` |
 | `${:trim()\|split(",")}`    | `obj`     | `trim()` , `split(",")` |
 
-### Example
+### Examples
 
 [@fluentfixture/format](./) provides two global methods and one default instance with default configurations: `format` , `compile`, and the `formatter`. The `format` produces the formatted string immediately. Differently, `compile` returns a pre-compiled template for reuse.
 
@@ -43,4 +43,30 @@ format('${name:capitalCase()}.${surname:upperCase()} > MEMBERSHIP-1=${membership
 
 format('${surname:upperCase()|padEnd(5, "#")} > MEMBERSHIPS=${memberships:join("+")}', source);
 // DOE## > MEMBERSHIPS=regular+starter
+```
+
+#### Compile Example
+
+```typescript
+import { compile } from '@fluentfixture/format';
+
+const template = compile('ID=${name}-${surname:upperCase()} > ${role.admin}');
+
+template.format({
+  name: 'albert',
+  surname: 'einstein',
+  role: {
+    admin: true
+  }
+});
+// ID=albert-EINSTEIN > true
+
+template.format({
+  name: 'nikola',
+  surname: 'tesla',
+  role: {
+    admin: false
+  }
+});
+// ID=nikola-TESLA > false
 ```
