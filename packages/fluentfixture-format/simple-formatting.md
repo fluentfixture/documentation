@@ -22,6 +22,8 @@ Formatting syntax consists of two parts: `${path:pipe-1|pipe-2|...|pipe-n}`
 Using the `compile` is extremely fast according to the `format` method for repeating usages.
 {% endhint %}
 
+#### Format Example
+
 ```typescript
 import { format } from '@fluentfixture/format';
 
