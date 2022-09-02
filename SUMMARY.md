@@ -6,7 +6,9 @@
 
 * [@fluentfixture/format](packages/fluentfixture-format/README.md)
   * [✏ Simple Formatting](packages/fluentfixture-format/simple-formatting.md)
-  * [🛠 Transformations](packages/fluentfixture-format/transformations.md)
+  * [🛠 Transformations](packages/fluentfixture-format/transformations/README.md)
+    * [🐧 Built-Ins](packages/fluentfixture-format/transformations/built-ins.md)
+    * [🐣 Customs](packages/fluentfixture-format/transformations/customs.md)
   * [❗ Error Handling](packages/fluentfixture-format/error-handling.md)
   * [👾 Sample (Github)](https://github.com/fluentfixture/fluentfixture/tree/main/sample/01-format)
   * [🔭 Sample (Sandbox)](https://codesandbox.io/s/github/fluentfixture/fluentfixture/tree/main/sample/01-format)
