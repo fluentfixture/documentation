@@ -6,12 +6,12 @@ A transformation is a function that is chained in the format expression. Transfo
 "${path:func1()|func2()|func3()}"
 ```
 
-In the expression above;
+For the expression above, the execution order;
 
-* execute `path`
-* then execute `func1()`
-* then execute `func2()`
-* then execute `func3()`
+* evaluates the `path`&#x20;
+* executes `func1()` with the evaluated value
+* executes `func2()` with the result of the `func1()`
+* executes `func3()` with the result of the `func2()`
 
 ### Naming Convention
 

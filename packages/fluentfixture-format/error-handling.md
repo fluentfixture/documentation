@@ -22,7 +22,7 @@ format("${:split(',')}", {}); // single quotes are not supported.
 
 Transformation errors occur while invoking a transformation method. By default, these kinds of errors are handled by the library.
 
-#### With IgnoreErrors Flag
+#### With IgnoreErrors Flag (Default)
 
 ```typescript
 import { Formatter, Pipes } from '@fluentfixture/format';
