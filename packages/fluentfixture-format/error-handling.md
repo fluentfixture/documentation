@@ -1,4 +1,4 @@
-# Error Handling
+# ❗ Error Handling
 
 In the formatting process, there may be two types of errors.
 

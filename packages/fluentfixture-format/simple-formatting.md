@@ -1,4 +1,4 @@
-# Simple Formatting
+# ✏ Simple Formatting
 
 ### Syntax
 
