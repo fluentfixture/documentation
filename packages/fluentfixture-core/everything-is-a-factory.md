@@ -1,7 +1,7 @@
 ---
 cover: >-
   https://images.unsplash.com/photo-1516937941344-00b4e0337589?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHwyfHxmYWN0b3J5fGVufDB8fHx8MTY2MjEyMjE0Ng&ixlib=rb-1.2.1&q=80
-coverY: 0
+coverY: -411.8981562774364
 ---
 
 # 🏭 Everything Is A Factory
