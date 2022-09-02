@@ -15,8 +15,15 @@ In the expression above;
 
 ### Naming Convention
 
-Lorem Ipsum
+A transformation's name must be a valid javascript function name. For clarity, the camel case naming convention is suggested.
 
 ### Parameters
 
-Lorem Ipsum
+A transformation function only accepts valid JSON values.
+
+* `number`
+* `string`
+* `boolean`
+* `null`
+* `JSON object`
+* `array`
