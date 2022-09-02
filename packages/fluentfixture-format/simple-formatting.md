@@ -16,9 +16,13 @@ Formatting syntax consists of two parts: `${path:pipe-1|pipe-2|...|pipe-n}`
 
 ### Examples
 
-[@fluentfixture/format](./) provides two global methods and one default instance with default configurations: `format` , `compile`, and the `formatter`. The `format` produces the formatted string immediately. Differently, `compile` returns a pre-compiled template for reuse.
+[@fluentfixture/format](./) provides two global methods with the default configurations: `format` , `compile`. The `format` produces the formatted string immediately. Differently, `compile` returns a pre-compiled template for reuse.
 
-#### Format Example
+#### Format
+
+{% hint style="warning" %}
+The `format` produces the formatted string immediately. Actually, the `format` compiles first and executes one time. For this reason, it is inefficient compared to the `compile.`
+{% endhint %}
 
 ```typescript
 import { format } from '@fluentfixture/format';
@@ -41,10 +45,10 @@ format('${surname:upperCase()|padEnd(5, "#")} > MEMBERSHIPS=${memberships:join("
 // DOE## > MEMBERSHIPS=regular+starter
 ```
 
-#### Compile Example
+#### Compile
 
-{% hint style="info" %}
-Using the `compile` is extremely fast according to the `format` method for repeating usages.
+{% hint style="success" %}
+`compile` returns a pre-compiled template for reuse. Using the `compile` is extremely fast according to the `format` method for repeating usages.
 {% endhint %}
 
 ```typescript
