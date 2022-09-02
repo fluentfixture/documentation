@@ -20,10 +20,10 @@ The [@fluentfixture](https://github.com/fluentfixture) does not provide predefin
 
 ## Packages
 
-|                                                         |                           | Version                                                                                                 |
-| ------------------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------- |
-| [@fluentfixture/core](packages/fluentfixture-core.md)   | Core modules and packages | ![npm version](https://badge.fury.io/js/@fluentfixture%2Fcore.svg)                                      |
-| [@fluentfixture/format](packages/fluentfixture-format/) | String format library     | <img src="https://badge.fury.io/js/@fluentfixture%2Fformat.svg" alt="npm version" data-size="original"> |
+|                                                         |                           | Version                                                                                                 | Sandbox                                                                                           |
+| ------------------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| [@fluentfixture/core](packages/fluentfixture-core/)     | Core modules and packages | ![npm version](https://badge.fury.io/js/@fluentfixture%2Fcore.svg)                                      | [Sandbox](https://codesandbox.io/s/github/fluentfixture/fluentfixture/tree/main/sample/02-core)   |
+| [@fluentfixture/format](packages/fluentfixture-format/) | String format library     | <img src="https://badge.fury.io/js/@fluentfixture%2Fformat.svg" alt="npm version" data-size="original"> | [Sandbox](https://codesandbox.io/s/github/fluentfixture/fluentfixture/tree/main/sample/01-format) |
 
 ## Follow Us!
 
