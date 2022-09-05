@@ -6,7 +6,7 @@ In [@fluentfixture](../../), streams cannot be initialized directly. To take adv
 
 #### bool()
 
-Returns a [`BooleanStream`](streams/booleanstream.md)  that produces a boolean value.
+Returns a [`BooleanStream`](streams/boolean-stream.md)  that produces a boolean value.
 
 <table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>percentage</code></td><td></td><td><code>0.5</code></td><td>Chance causing it to be <code>true</code>.</td></tr></tbody></table>
 
@@ -21,7 +21,7 @@ console.log(stream.many(5));
 
 #### truthy()
 
-Returns a [`BooleanStream`](streams/booleanstream.md)  that always produces `true`.
+Returns a [`BooleanStream`](streams/boolean-stream.md)  that always produces `true`.
 
 ```typescript
 import { truthy } from '@fluentfixture/core';
@@ -34,7 +34,7 @@ console.log(stream.many(5));
 
 #### falsy()
 
-Returns a [`BooleanStream`](streams/booleanstream.md)  that always produces `false`.
+Returns a [`BooleanStream`](streams/boolean-stream.md)  that always produces `false`.
 
 ```typescript
 import { falsy } from '@fluentfixture/core';
@@ -49,7 +49,7 @@ console.log(stream.many(5));
 
 #### int()
 
-Returns an [`NumberStream`](streams/numberstream.md)  that produces an integer value.
+Returns an [`NumberStream`](streams/number-stream.md)  that produces an integer value.
 
 <table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>min</code></td><td></td><td><code>0</code></td><td>Lower boundary.</td></tr><tr><td><code>max</code></td><td></td><td><code>1000</code></td><td>Upper boundary.</td></tr></tbody></table>
 
@@ -64,7 +64,7 @@ console.log(stream.many(5));
 
 #### real()
 
-Returns an [`NumberStream`](streams/numberstream.md)  that produces a float value.
+Returns an [`NumberStream`](streams/number-stream.md)  that produces a float value.
 
 <table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>min</code></td><td></td><td><code>0</code></td><td>Lower boundary.</td></tr><tr><td><code>max</code></td><td></td><td><code>1000</code></td><td>Upper boundary.</td></tr></tbody></table>
 
@@ -79,7 +79,7 @@ console.log(stream.many(5));
 
 #### num()
 
-Returns an [`NumberStream`](streams/numberstream.md)  that always produces the given number.
+Returns an [`NumberStream`](streams/number-stream.md)  that always produces the given number.
 
 <table><thead><tr><th>Parameter</th><th data-type="select" data-multiple>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>value</code></td><td></td><td></td><td>The number.</td></tr></tbody></table>
 
@@ -94,7 +94,7 @@ console.log(stream.many(5));
 
 #### zero()
 
-Returns an [`NumberStream`](streams/numberstream.md)  that always produces `zero`.
+Returns an [`NumberStream`](streams/number-stream.md)  that always produces `zero`.
 
 ```typescript
 import { zero } from '@fluentfixture/core';
@@ -107,7 +107,7 @@ console.log(stream.many(5));
 
 #### one()
 
-Returns an [`NumberStream`](streams/numberstream.md)  that always produces `one`.
+Returns an [`NumberStream`](streams/number-stream.md)  that always produces `one`.
 
 ```typescript
 import { one } from '@fluentfixture/core';

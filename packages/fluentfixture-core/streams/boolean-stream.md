@@ -1,10 +1,10 @@
-# 💜 BooleanStream
+# 💜 Boolean Stream
 
 The `BooleanStream` is a [`Stream`](stream.md) that provides boolean-related methods.
 
 ### not()
 
-Returns a [`BooleanStream`](booleanstream.md) that changes the produced input.
+Returns a [`BooleanStream`](boolean-stream.md) that changes the produced input.
 
 ```typescript
 import { truthy } from '@fluentfixture/core';

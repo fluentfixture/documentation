@@ -34,7 +34,7 @@ console.log(stream.many(2));
 
 ### array()
 
-Returns an [`ArrayStream`](arraystream.md) with the given length.
+Returns an [`ArrayStream`](array-stream.md) with the given length.
 
 <table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>length</code></td><td></td><td><code>10</code></td><td>The length of the new <code>ArrayStream</code>.</td></tr></tbody></table>
 
@@ -52,7 +52,7 @@ console.log(stream.single());
 
 ### format()
 
-Returns a [`StringStream`](stringstream.md) that formats the produced input by using [@fluentfixture/format](../../fluentfixture-format/).
+Returns a [`StringStream`](string-stream.md) that formats the produced input by using [@fluentfixture/format](../../fluentfixture-format/).
 
 <table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>template</code></td><td></td><td></td><td>Format template.</td></tr></tbody></table>
 

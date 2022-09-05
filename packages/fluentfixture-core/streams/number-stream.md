@@ -1,10 +1,10 @@
-# 💛 NumberStream
+# 💛 Number Stream
 
 The `NumberStream` is a [`Stream`](stream.md) that provides number-related methods.
 
 ### add()
 
-Returns an [`NumberStream`](numberstream.md)  that adds the given value to the produced output.
+Returns an [`NumberStream`](number-stream.md)  that adds the given value to the produced output.
 
 <table><thead><tr><th>Parameter</th><th data-type="select" data-multiple>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>value</code></td><td></td><td></td><td>The value.</td></tr></tbody></table>
 
@@ -19,7 +19,7 @@ console.log(stream.many(5));
 
 ### multiply()
 
-Returns an [`NumberStream`](numberstream.md)  that multiplies the given value with the produced output.
+Returns an [`NumberStream`](number-stream.md)  that multiplies the given value with the produced output.
 
 <table><thead><tr><th>Parameter</th><th data-type="select" data-multiple>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>value</code></td><td></td><td></td><td>The value.</td></tr></tbody></table>
 
@@ -34,7 +34,7 @@ console.log(stream.many(5));
 
 ### subtract()
 
-Returns an [`NumberStream`](numberstream.md)  that subtracts the given value from the produced output.
+Returns an [`NumberStream`](number-stream.md)  that subtracts the given value from the produced output.
 
 <table><thead><tr><th>Parameter</th><th data-type="select" data-multiple>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>value</code></td><td></td><td></td><td>The value.</td></tr></tbody></table>
 
@@ -49,7 +49,7 @@ console.log(stream.many(5));
 
 ### divide()
 
-Returns an [`NumberStream`](numberstream.md)  that divides the produced output to the given value.
+Returns an [`NumberStream`](number-stream.md)  that divides the produced output to the given value.
 
 <table><thead><tr><th>Parameter</th><th data-type="select" data-multiple>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>value</code></td><td></td><td></td><td>The value.</td></tr></tbody></table>
 
@@ -64,7 +64,7 @@ console.log(stream.many(5));
 
 ### mode()
 
-Returns an [`NumberStream`](numberstream.md)  that calculates the mode of the produced value with the given value.
+Returns an [`NumberStream`](number-stream.md)  that calculates the mode of the produced value with the given value.
 
 <table><thead><tr><th>Parameter</th><th data-type="select" data-multiple>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>value</code></td><td></td><td></td><td>The value.</td></tr></tbody></table>
 
