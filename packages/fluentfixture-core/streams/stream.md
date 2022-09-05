@@ -1,6 +1,6 @@
 # Stream
 
-The `Stream` is the base class of all streams.
+The `Stream` is the base class of all other streams.
 
 ### single()
 
@@ -99,4 +99,73 @@ const stream = val('value')
 
 console.log(stream.single());
 // null or 'value'
+```
+
+### convert()
+
+Returns a [`Stream`](stream.md) with maps the produced value to another type.
+
+<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td>fn</td><td></td><td></td><td>The converter function.</td></tr></tbody></table>
+
+```typescript
+import { val } from '@fluentfixture/core';
+
+// val() returns a Stream with a static value.
+const stream = val('value')
+  .convert(i => i.length);
+
+console.log(stream.single());
+// 5
+```
+
+### apply()
+
+Returns a [`Stream`](stream.md) with maps the produced value to the same type.
+
+<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td>fn</td><td></td><td></td><td>The apply function.</td></tr></tbody></table>
+
+```typescript
+import { val } from '@fluentfixture/core';
+
+// val() returns a Stream with a static value.
+const stream = val('value')
+  .apply(i => i.padStart(7, '*'));
+
+console.log(stream.single());
+// '**value'
+```
+
+### memo()
+
+Memoize and returns the same [`Stream`](stream.md) that produces always the same value.
+
+```typescript
+import { val } from '@fluentfixture/core';
+
+// val() returns a Stream with a static value.
+const stream = val('value')
+  .apply(i => i.padStart(7, '*'))
+  .memo();
+
+console.log(stream.many(2));
+// ['**value', '**value']
+```
+
+### dump()
+
+Returns a [`Stream`](stream.md) with debugging points.
+
+<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td>fn</td><td></td><td></td><td>The debugging function.</td></tr></tbody></table>
+
+```typescript
+import { val } from '@fluentfixture/core';
+
+// val() returns a Stream with a static value.
+const stream = val('value')
+  .dump(i => console.log(i))
+  .apply(i => i.padStart(7, '*'));
+
+console.log(stream.many(2));
+// 'values'
+// ['**value', '**value']
 ```
