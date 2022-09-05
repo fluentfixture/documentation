@@ -30,4 +30,12 @@ console.log(stream.single());
 
 Let's decompose the stream above to understand the stream and factory concept.
 
-<table><thead><tr><th>Code</th><th data-type="select">Output</th><th data-type="select">Sub-Component</th><th>Job</th></tr></thead><tbody><tr><td><code>int(1, 100)</code></td><td></td><td></td><td>generates an integer.</td></tr><tr><td><code>.add(0.5)</code></td><td></td><td></td><td>adds <code>0.5</code> to the previous output.</td></tr><tr><td><code>.array(10)</code></td><td></td><td></td><td>Iterates to decorated factory.</td></tr><tr><td><code>.sort(...)</code></td><td></td><td></td><td>sorts the previous output.</td></tr><tr><td><code>.join(...)</code></td><td></td><td></td><td>merge the previos output.</td></tr><tr><td><code>.format(...)</code></td><td></td><td></td><td>formats the previous output.</td></tr><tr><td><code>.upperCase()</code></td><td></td><td></td><td>converts to upper case the previous outout.</td></tr></tbody></table>
+| Code           | Output                                 | Sub-Component       | Job                                        |
+| -------------- | -------------------------------------- | ------------------- | ------------------------------------------ |
+| `int(1, 100)`  | ``[`NumberStream`](number-stream.md)`` | `IntegerFactory`    | generates an integer                       |
+| `.add(0.5)`    | ``[`NumberStream`](number-stream.md)`` | `FunctionDecorator` | adds `0.5` to the previous output          |
+| `.array(10)`   | ``[`ArrayStream`](array-stream.md)``   | `Iterator`          | Iterates to decorated factory              |
+| `.sort(...)`   | ``[`ArrayStream`](array-stream.md)``   | `FunctionDecorator` | sorts the previous output                  |
+| `.join(...)`   | ``[`StringStream`](string-stream.md)`` | `FunctionDecorator` | merge the previos output                   |
+| `.format(...)` | ``[`StringStream`](string-stream.md)`` | `FormatDecorator`   | formats the previous output                |
+| `.upperCase()` | ``[`StringStream`](string-stream.md)`` | `FunctionDecorator` | converts to upper case the previous outout |

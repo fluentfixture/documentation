@@ -8,7 +8,9 @@ In [@fluentfixture](../../), streams cannot be initialized directly. To take adv
 
 Returns a [`BooleanStream`](streams/boolean-stream.md)  that produces a boolean value.
 
-<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>percentage</code></td><td></td><td><code>0.5</code></td><td>Chance causing it to be <code>true</code>.</td></tr></tbody></table>
+| Parameter    | Type    | Default | Description                     |
+| ------------ | ------- | ------- | ------------------------------- |
+| `percentage` | `Float` | `0.5`   | Chance causing it to be `true`. |
 
 ```typescript
 import { bool } from '@fluentfixture/core';
@@ -51,7 +53,10 @@ console.log(stream.many(5));
 
 Returns an [`NumberStream`](streams/number-stream.md)  that produces an integer value.
 
-<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>min</code></td><td></td><td><code>0</code></td><td>Lower boundary.</td></tr><tr><td><code>max</code></td><td></td><td><code>1000</code></td><td>Upper boundary.</td></tr></tbody></table>
+| Parameter | Type      | Default | Description     |
+| --------- | --------- | ------- | --------------- |
+| `min`     | `Integer` | `0`     | Lower boundary. |
+| `max`     | `Integer` | `1000`  | Upper boundary. |
 
 ```typescript
 import { int } from '@fluentfixture/core';
@@ -66,7 +71,10 @@ console.log(stream.many(5));
 
 Returns an [`NumberStream`](streams/number-stream.md)  that produces a float value.
 
-<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>min</code></td><td></td><td><code>0</code></td><td>Lower boundary.</td></tr><tr><td><code>max</code></td><td></td><td><code>1000</code></td><td>Upper boundary.</td></tr></tbody></table>
+| Parameter | Type    | Default | Description     |
+| --------- | ------- | ------- | --------------- |
+| `min`     | `Float` | `0`     | Lower boundary. |
+| `max`     | `Float` | `1000`  | Upper boundary. |
 
 ```typescript
 import { real } from '@fluentfixture/core';
@@ -81,7 +89,9 @@ console.log(stream.many(5));
 
 Returns an [`NumberStream`](streams/number-stream.md)  that always produces the given number.
 
-<table><thead><tr><th>Parameter</th><th data-type="select" data-multiple>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>value</code></td><td></td><td></td><td>The number.</td></tr></tbody></table>
+| Parameter | Type     | Default | Description |
+| --------- | -------- | ------- | ----------- |
+| `value`   | `Number` |         | The number. |
 
 ```typescript
 import { num } from '@fluentfixture/core';

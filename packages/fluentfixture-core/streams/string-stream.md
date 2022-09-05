@@ -45,7 +45,10 @@ console.log(stream.single());
 
 Returns a [`StringStream`](string-stream.md) that add pads (from the start) to the produced output. ([Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String))
 
-<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>length</code></td><td></td><td></td><td>target length</td></tr><tr><td><code>char</code></td><td></td><td><code>' '</code></td><td>pad string</td></tr></tbody></table>
+| Parameter | Type      | Default | Description   |
+| --------- | --------- | ------- | ------------- |
+| `length`  | `Integer` |         | target length |
+| `char`    | `String`  | `' '`   | pad string    |
 
 ```typescript
 import {text} from '@fluentfixture/core';
@@ -60,7 +63,10 @@ console.log(stream.single());
 
 Returns a [`StringStream`](string-stream.md) that add pads (from the end) to the produced output. ([Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String))
 
-<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>length</code></td><td></td><td></td><td>target length</td></tr><tr><td><code>char</code></td><td></td><td><code>' '</code></td><td>pad string</td></tr></tbody></table>
+| Parameter | Type      | Default | Description   |
+| --------- | --------- | ------- | ------------- |
+| `length`  | `Integer` |         | target length |
+| `char`    | `String`  | `' '`   | pad string    |
 
 ```typescript
 import {text} from '@fluentfixture/core';
@@ -75,7 +81,10 @@ console.log(stream.single());
 
 Returns an [`ArrayStream`](array-stream.md) that produces the split output. ([Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String))
 
-<table><thead><tr><th>Parameter</th><th data-type="select" data-multiple>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>separator</code></td><td></td><td></td><td>separator</td></tr><tr><td><code>limit</code></td><td></td><td><code>0</code></td><td>split limit</td></tr></tbody></table>
+| Parameter   | Type                 | Default | Description |
+| ----------- | -------------------- | ------- | ----------- |
+| `separator` | `String` or `RegExp` |         | separator   |
+| `limit`     | `Integer`            | `0`     | split limit |
 
 ```typescript
 import { text } from '@fluentfixture/core';
@@ -90,7 +99,7 @@ console.log(stream.single());
 
 ### lowerCase()
 
-Returns a [`StringStream`](string-stream.md) that convert the produces output to lower case. ([Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String))
+Returns a [`StringStream`](string-stream.md) that converts the produced output to the lower case. ([Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String))
 
 ```typescript
 import { text } from '@fluentfixture/core';
@@ -103,7 +112,7 @@ console.log(stream.single());
 
 ### upperCase()
 
-Returns a [`StringStream`](string-stream.md) that convert the produces output to upper case. ([Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String))
+Returns a [`StringStream`](string-stream.md) that converts the produced output to the upper case. ([Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String))
 
 ```typescript
 import { text } from '@fluentfixture/core';
@@ -116,7 +125,7 @@ console.log(stream.single());
 
 ### camelCase()
 
-Returns a [`StringStream`](string-stream.md) that convert the produces output to camel case. ([Library Docs](https://www.npmjs.com/package/change-case))
+Returns a [`StringStream`](string-stream.md) that converts the produced output to the camel case. ([Library Docs](https://www.npmjs.com/package/change-case))
 
 ```typescript
 import { text } from '@fluentfixture/core';
@@ -129,7 +138,7 @@ console.log(stream.single());
 
 ### capitalCase()
 
-Returns a [`StringStream`](string-stream.md) that convert the produces output to capital case. ([Library Docs](https://www.npmjs.com/package/change-case))
+Returns a [`StringStream`](string-stream.md) that converts the produced output to the capital case. ([Library Docs](https://www.npmjs.com/package/change-case))
 
 ```typescript
 import { text } from '@fluentfixture/core';
@@ -142,7 +151,7 @@ console.log(stream.single());
 
 ### constantCase()
 
-Returns a [`StringStream`](string-stream.md) that convert the produces output to constant case. ([Library Docs](https://www.npmjs.com/package/change-case))
+Returns a [`StringStream`](string-stream.md) that converts the produced output to the constant case. ([Library Docs](https://www.npmjs.com/package/change-case))
 
 ```typescript
 import { text } from '@fluentfixture/core';
@@ -155,7 +164,7 @@ console.log(stream.single());
 
 ### pathCase()
 
-Returns a [`StringStream`](string-stream.md) that convert the produces output to path case. ([Library Docs](https://www.npmjs.com/package/change-case))
+Returns a [`StringStream`](string-stream.md) that converts the produced output to the path case. ([Library Docs](https://www.npmjs.com/package/change-case))
 
 ```typescript
 import { text } from '@fluentfixture/core';
@@ -168,7 +177,7 @@ console.log(stream.single());
 
 ### dotCase()
 
-Returns a [`StringStream`](string-stream.md) that convert the produces output to dot case. ([Library Docs](https://www.npmjs.com/package/change-case))
+Returns a [`StringStream`](string-stream.md) that converts the produced output to the dot case. ([Library Docs](https://www.npmjs.com/package/change-case))
 
 ```typescript
 import { text } from '@fluentfixture/core';
@@ -181,7 +190,7 @@ console.log(stream.single());
 
 ### headerCase()
 
-Returns a [`StringStream`](string-stream.md) that convert the produces output to header case. ([Library Docs](https://www.npmjs.com/package/change-case))
+Returns a [`StringStream`](string-stream.md) that converts the produced output to the header case. ([Library Docs](https://www.npmjs.com/package/change-case))
 
 ```typescript
 import { text } from '@fluentfixture/core';
@@ -194,7 +203,7 @@ console.log(stream.single());
 
 ### paramCase()
 
-Returns a [`StringStream`](string-stream.md) that convert the produces output to param case. ([Library Docs](https://www.npmjs.com/package/change-case))
+Returns a [`StringStream`](string-stream.md) that converts the produced output to the param case. ([Library Docs](https://www.npmjs.com/package/change-case))
 
 ```typescript
 import { text } from '@fluentfixture/core';
@@ -207,7 +216,7 @@ console.log(stream.single());
 
 ### pascalCase()
 
-Returns a [`StringStream`](string-stream.md) that convert the produces output to pascal case. ([Library Docs](https://www.npmjs.com/package/change-case))
+Returns a [`StringStream`](string-stream.md) that converts the produced output to the pascal case. ([Library Docs](https://www.npmjs.com/package/change-case))
 
 ```typescript
 import { text } from '@fluentfixture/core';
@@ -220,7 +229,7 @@ console.log(stream.single());
 
 ### snakeCase()
 
-Returns a [`StringStream`](string-stream.md) that convert the produces output to snake case. ([Library Docs](https://www.npmjs.com/package/change-case))
+Returns a [`StringStream`](string-stream.md) that converts the produced output to the snake case. ([Library Docs](https://www.npmjs.com/package/change-case))
 
 ```typescript
 import { text } from '@fluentfixture/core';
