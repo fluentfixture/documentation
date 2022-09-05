@@ -15,6 +15,7 @@
 * [@fluentfixture/core](packages/fluentfixture-core/README.md)
   * [🏭 Everything Is A Factory](packages/fluentfixture-core/everything-is-a-factory.md)
   * [⛓ Streams](packages/fluentfixture-core/streams.md)
+  * [💎 Generators](packages/fluentfixture-core/generators.md)
   * [👾 Sample (Github)](https://github.com/fluentfixture/fluentfixture/tree/main/sample/02-core)
   * [🔭 Sample (Sandbox)](https://codesandbox.io/s/github/fluentfixture/fluentfixture/tree/main/sample/02-core)
 

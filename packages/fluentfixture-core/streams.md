@@ -4,6 +4,10 @@
 
 In [@fluentfixture](../../), factories are small and valuable units, but they are very incapable of building complex and conditional data. Streams are factory wrappers (stream is a kind of factory) that provide a fluent interface. All methods of streams create other streams that wrap themselves. Like any factory, streams are also immutable and reusable types.
 
+{% hint style="info" %}
+Stream instances cannot be initialized directly. Instead of this, [generator](generators.md) functions can be used.
+{% endhint %}
+
 ### Decomposition Of A Stream
 
 In the following example, a stream is built by compositions of many components.&#x20;
