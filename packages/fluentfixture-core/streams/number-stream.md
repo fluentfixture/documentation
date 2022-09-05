@@ -4,7 +4,7 @@ The `NumberStream` is a [`Stream`](stream.md) that provides number-related metho
 
 ### add()
 
-Returns an [`NumberStream`](number-stream.md)  that adds the given value to the produced output.
+Returns a [`NumberStream`](number-stream.md)  that adds the given value to the produced output.
 
 | Parameter | Type     | Default | Description |
 | --------- | -------- | ------- | ----------- |
@@ -21,7 +21,7 @@ console.log(stream.many(5));
 
 ### multiply()
 
-Returns an [`NumberStream`](number-stream.md)  that multiplies the given value with the produced output.
+Returns a [`NumberStream`](number-stream.md)  that multiplies the given value with the produced output.
 
 | Parameter | Type     | Default | Description |
 | --------- | -------- | ------- | ----------- |
@@ -38,7 +38,7 @@ console.log(stream.many(5));
 
 ### subtract()
 
-Returns an [`NumberStream`](number-stream.md)  that subtracts the given value from the produced output.
+Returns a [`NumberStream`](number-stream.md)  that subtracts the given value from the produced output.
 
 | Parameter | Type     | Default | Description |
 | --------- | -------- | ------- | ----------- |
@@ -55,7 +55,7 @@ console.log(stream.many(5));
 
 ### divide()
 
-Returns an [`NumberStream`](number-stream.md)  that divides the produced output to the given value.
+Returns a [`NumberStream`](number-stream.md)  that divides the produced output to the given value.
 
 | Parameter | Type     | Default | Description |
 | --------- | -------- | ------- | ----------- |
@@ -72,7 +72,7 @@ console.log(stream.many(5));
 
 ### mode()
 
-Returns an [`NumberStream`](number-stream.md)  that calculates the mode of the produced value with the given value.
+Returns a [`NumberStream`](number-stream.md)  that calculates the mode of the produced value with the given value.
 
 | Parameter | Type     | Default | Description |
 | --------- | -------- | ------- | ----------- |
