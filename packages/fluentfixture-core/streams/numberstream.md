@@ -1,4 +1,4 @@
-# NumberStream
+# 💛 NumberStream
 
 The `NumberStream` is a [`Stream`](stream.md) that provides number-related methods.
 

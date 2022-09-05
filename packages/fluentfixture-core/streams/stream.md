@@ -1,4 +1,4 @@
-# Stream
+# 🧡 Stream
 
 The `Stream` is the base class of all other streams.
 
