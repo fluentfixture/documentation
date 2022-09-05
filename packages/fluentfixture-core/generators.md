@@ -2,15 +2,15 @@
 
 In [@fluentfixture](../../), streams cannot be initialized directly. To take advantage of the stream's fluent interface, we can use generator functions.
 
-### Booleans
+### Boolean
 
 #### bool()
 
 Returns a [`BooleanStream`](streams/boolean-stream.md)  that produces a boolean value.
 
-| Parameter    | Type    | Default | Description                     |
-| ------------ | ------- | ------- | ------------------------------- |
-| `percentage` | `Float` | `0.5`   | Chance causing it to be `true`. |
+| Parameter    | Type    | Default | Description                    |
+| ------------ | ------- | ------- |--------------------------------|
+| `percentage` | `Float` | `0.5`   | chance causing it to be `true` |
 
 ```typescript
 import { bool } from '@fluentfixture/core';
@@ -47,16 +47,16 @@ console.log(stream.many(5));
 // [false, false, false, false, false]
 ```
 
-### Numbers
+### Number
 
 #### int()
 
 Returns an [`NumberStream`](streams/number-stream.md)  that produces an integer value.
 
-| Parameter | Type      | Default | Description     |
-| --------- | --------- | ------- | --------------- |
-| `min`     | `Integer` | `0`     | Lower boundary. |
-| `max`     | `Integer` | `1000`  | Upper boundary. |
+| Parameter | Type      | Default | Description    |
+| --------- | --------- | ------- |----------------|
+| `min`     | `Integer` | `0`     | lower boundary |
+| `max`     | `Integer` | `1000`  | upper boundary |
 
 ```typescript
 import { int } from '@fluentfixture/core';
@@ -71,10 +71,10 @@ console.log(stream.many(5));
 
 Returns an [`NumberStream`](streams/number-stream.md)  that produces a float value.
 
-| Parameter | Type    | Default | Description     |
-| --------- | ------- | ------- | --------------- |
-| `min`     | `Float` | `0`     | Lower boundary. |
-| `max`     | `Float` | `1000`  | Upper boundary. |
+| Parameter | Type    | Default | Description    |
+| --------- | ------- | ------- |----------------|
+| `min`     | `Float` | `0`     | lower boundary |
+| `max`     | `Float` | `1000`  | upper boundary |
 
 ```typescript
 import { real } from '@fluentfixture/core';
@@ -89,9 +89,9 @@ console.log(stream.many(5));
 
 Returns an [`NumberStream`](streams/number-stream.md)  that always produces the given number.
 
-| Parameter | Type     | Default | Description |
-| --------- | -------- | ------- | ----------- |
-| `value`   | `Number` |         | The number. |
+| Parameter | Type     | Default | Description  |
+| --------- | -------- | ------- |--------------|
+| `value`   | `Number` |         | value        |
 
 ```typescript
 import { num } from '@fluentfixture/core';
@@ -128,7 +128,7 @@ console.log(stream.many(5));
 // [1, 1, 1, 1, 1]
 ```
 
-### Strings
+### String
 
 #### text()
 
@@ -265,4 +265,37 @@ const stream = alphanumeric(10);
 
 console.log(stream.single());
 // 'iZvY8UtXxh'
+```
+
+### Date
+
+#### date()
+
+Returns a [`DateStream`](streams/date-stream.md)  that produces a date.
+
+| Parameter   | Type     | Default          | Description     |
+|-------------|----------|------------------|-----------------|
+| `min`       | `Date`   | `yesterday`      | lower boundary  |
+| `max`       | `Date`   | `tomorrow`       | upper boundary  |
+
+```typescript
+import { date } from '@fluentfixture/core';
+
+const stream = date();
+
+console.log(stream.single());
+// Tue Sep 06 2022 11:10:26 GMT+0300 (GMT+03:00)
+```
+
+#### now()
+
+Returns a [`DateStream`](streams/date-stream.md) that produces the current date.
+
+```typescript
+import { now } from '@fluentfixture/core';
+
+const stream = now();
+
+console.log(stream.single());
+// Tue Sep 06 2022 11:10:26 GMT+0300 (GMT+03:00)
 ```
