@@ -16,6 +16,7 @@
   * [🏭 Everything Is A Factory](packages/fluentfixture-core/everything-is-a-factory.md)
   * [⛓ Streams](packages/fluentfixture-core/streams/README.md)
     * [Stream](packages/fluentfixture-core/streams/stream.md)
+    * [StringStream](packages/fluentfixture-core/streams/stringstream.md)
     * [ArrayStream](packages/fluentfixture-core/streams/arraystream.md)
     * [BooleanStream](packages/fluentfixture-core/streams/booleanstream.md)
   * [💎 Generators](packages/fluentfixture-core/generators.md)

@@ -8,7 +8,7 @@ In [@fluentfixture](../../), streams cannot be initialized directly. To take adv
 
 Returns a [`BooleanStream`](streams/booleanstream.md)  that produces a boolean value.
 
-<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td>percentage</td><td></td><td><code>0.5</code></td><td>Produce a boolean with the specified chance causing it to be <code>true</code></td></tr></tbody></table>
+<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td>percentage</td><td></td><td><code>0.5</code></td><td>Chance causing it to be <code>true</code>.</td></tr></tbody></table>
 
 #### truthy()
 
