@@ -1,11 +1,10 @@
-# 💚 StringStream
+# 💚 String Stream
 
 The `StringStream` is a [`Stream`](stream.md) that provides string-related methods.
 
 ### trim()
 
-Returns a [`StringStream`](string-stream.md) that trims the produced
-output. [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+Returns a [`StringStream`](string-stream.md) that trims the produced output. [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)
 
 ```typescript
 import {text} from '@fluentfixture/core';
@@ -18,8 +17,7 @@ console.log(stream.single());
 
 ### trimStart()
 
-Returns a [`StringStream`](string-stream.md) that trims (from start) the produced
-output. [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+Returns a [`StringStream`](string-stream.md) that trims (from the start) the produced output. [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)
 
 ```typescript
 import {text} from '@fluentfixture/core';
@@ -32,8 +30,7 @@ console.log(stream.single());
 
 ### trimEnd()
 
-Returns a [`StringStream`](string-stream.md) that trims (from end) the produced
-output. [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+Returns a [`StringStream`](string-stream.md) that trims (from the end) the produced output. [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)
 
 ```typescript
 import {text} from '@fluentfixture/core';
@@ -46,33 +43,9 @@ console.log(stream.single());
 
 ### padStart()
 
-Returns a [`StringStream`](string-stream.md) that add pads (from start) to the produced
-output. [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+Returns a [`StringStream`](string-stream.md) that add pads (from the start) to the produced output. [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)
 
-<table>
-    <thead>
-    <tr>
-        <th>Parameter</th>
-        <th data-type="select" data-multiple>Type</th>
-        <th>Default</th>
-        <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td><code>length</code></td>
-        <td>Integer</td>
-        <td></td>
-        <td>Target length</td>
-    </tr>
-    <tr>
-        <td><code>char</code></td>
-        <td>String</td>
-        <td></td>
-        <td>Pad character</td>
-    </tr>
-    </tbody>
-</table>
+<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>length</code></td><td></td><td></td><td>target length</td></tr><tr><td><code>char</code></td><td></td><td><code>' '</code></td><td>pad string</td></tr></tbody></table>
 
 ```typescript
 import {text} from '@fluentfixture/core';
@@ -85,33 +58,9 @@ console.log(stream.single());
 
 ### padEnd()
 
-Returns a [`StringStream`](string-stream.md) that add pads (from end) to the produced
-output. [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+Returns a [`StringStream`](string-stream.md) that add pads (from the end) to the produced output. [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)
 
-<table>
-    <thead>
-    <tr>
-        <th>Parameter</th>
-        <th data-type="select" data-multiple>Type</th>
-        <th>Default</th>
-        <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td><code>length</code></td>
-        <td>Integer</td>
-        <td></td>
-        <td>Target length</td>
-    </tr>
-    <tr>
-        <td><code>char</code></td>
-        <td>String</td>
-        <td></td>
-        <td>Pad character</td>
-    </tr>
-    </tbody>
-</table>
+<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>length</code></td><td></td><td></td><td>target length</td></tr><tr><td><code>char</code></td><td></td><td><code>' '</code></td><td>pad string</td></tr></tbody></table>
 
 ```typescript
 import {text} from '@fluentfixture/core';
@@ -124,33 +73,9 @@ console.log(stream.single());
 
 ### split()
 
-Returns a [`ArrayStream`](array-stream.md) that splits the produced
-output. [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+Returns an [`ArrayStream`](array-stream.md) that produces the split output. [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String)
 
-<table>
-    <thead>
-    <tr>
-        <th>Parameter</th>
-        <th data-type="select" data-multiple>Type</th>
-        <th>Default</th>
-        <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td><code>separator</code></td>
-        <td>String, RegExp</td>
-        <td></td>
-        <td>Separator.</td>
-    </tr>
-    <tr>
-        <td><code>limit</code></td>
-        <td>Integer</td>
-        <td>0</td>
-        <td>Limit on the number of substrings to be included in the array.</td>
-    </tr>
-    </tbody>
-</table>
+<table><thead><tr><th>Parameter</th><th data-type="select" data-multiple>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>separator</code></td><td></td><td></td><td>separator</td></tr><tr><td><code>limit</code></td><td></td><td><code>0</code></td><td>split limit</td></tr></tbody></table>
 
 ```typescript
 import { text } from '@fluentfixture/core';

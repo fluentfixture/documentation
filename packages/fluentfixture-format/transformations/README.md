@@ -12,6 +12,7 @@ For the expression above, the execution order;
 * executes `func1()` with the evaluated value
 * executes `func2()` with the result of the `func1()`
 * executes `func3()` with the result of the `func2()`
+* returns the output of `func3()`
 
 ### Naming Convention
 

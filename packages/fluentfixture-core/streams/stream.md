@@ -20,7 +20,7 @@ console.log(stream.single());
 
 Returns the produced array.
 
-<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>length</code></td><td></td><td><code>10</code></td><td>The length of the output.</td></tr></tbody></table>
+<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>length</code></td><td></td><td><code>10</code></td><td>target length</td></tr></tbody></table>
 
 ```typescript
 import { val } from '@fluentfixture/core';
@@ -36,7 +36,7 @@ console.log(stream.many(2));
 
 Returns an [`ArrayStream`](array-stream.md) with the given length.
 
-<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>length</code></td><td></td><td><code>10</code></td><td>The length of the new <code>ArrayStream</code>.</td></tr></tbody></table>
+<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>length</code></td><td></td><td><code>10</code></td><td>target length of the <a href="array-stream.md"><code>ArrayStream</code></a><code></code></td></tr></tbody></table>
 
 ```typescript
 import { val } from '@fluentfixture/core';
@@ -54,7 +54,7 @@ console.log(stream.single());
 
 Returns a [`StringStream`](string-stream.md) that formats the produced input by using [@fluentfixture/format](../../fluentfixture-format/).
 
-<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>template</code></td><td></td><td></td><td>Format template.</td></tr></tbody></table>
+<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>template</code></td><td></td><td></td><td>format template</td></tr></tbody></table>
 
 ```typescript
 import { val } from '@fluentfixture/core';
@@ -71,7 +71,7 @@ console.log(stream.single());
 
 Returns a [`Stream`](stream.md) that may produce value or `undefined`.
 
-<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>percentage</code></td><td></td><td><code>0.5</code></td><td>Chance causing it to be defined.</td></tr></tbody></table>
+<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>percentage</code></td><td></td><td><code>0.5</code></td><td>chance causing it to be defined</td></tr></tbody></table>
 
 ```typescript
 import { val } from '@fluentfixture/core';
@@ -88,7 +88,7 @@ console.log(stream.single());
 
 Returns a [`Stream`](stream.md) that may produce value or `null`.
 
-<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>percentage</code></td><td></td><td><code>0.5</code></td><td>Chance causing it to be defined.</td></tr></tbody></table>
+<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>percentage</code></td><td></td><td><code>0.5</code></td><td>chance causing it to be defined</td></tr></tbody></table>
 
 ```typescript
 import { val } from '@fluentfixture/core';
@@ -105,7 +105,7 @@ console.log(stream.single());
 
 Returns a [`Stream`](stream.md) with maps the produced value to another type.
 
-<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>fn</code></td><td></td><td></td><td>The converter function.</td></tr></tbody></table>
+<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>fn</code></td><td></td><td></td><td>converter function</td></tr></tbody></table>
 
 ```typescript
 import { val } from '@fluentfixture/core';
@@ -122,7 +122,7 @@ console.log(stream.single());
 
 Returns a [`Stream`](stream.md) with maps the produced value to the same type.
 
-<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>fn</code></td><td></td><td></td><td>The apply function.</td></tr></tbody></table>
+<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>fn</code></td><td></td><td></td><td>apply function</td></tr></tbody></table>
 
 ```typescript
 import { val } from '@fluentfixture/core';
@@ -155,7 +155,7 @@ console.log(stream.many(2));
 
 Returns a [`Stream`](stream.md) with debugging points.
 
-<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>fn</code></td><td></td><td></td><td>The debugging function.</td></tr></tbody></table>
+<table><thead><tr><th>Parameter</th><th data-type="select">Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>fn</code></td><td></td><td></td><td>debugging function</td></tr></tbody></table>
 
 ```typescript
 import { val } from '@fluentfixture/core';
