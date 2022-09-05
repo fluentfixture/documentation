@@ -127,3 +127,142 @@ const stream = one();
 console.log(stream.many(5));
 // [1, 1, 1, 1, 1]
 ```
+
+### Strings
+
+#### text()
+
+Returns a [`StringStream`](streams/string-stream.md) that always produces the given value.
+
+| Parameter  | Type     | Default | Description  |
+|------------|----------|---------|--------------|
+| `str`      | `String` |         | string       |
+
+```typescript
+import { text } from '@fluentfixture/core';
+
+const stream = text('hello');
+
+console.log(stream.single());
+// 'hello'
+```
+
+#### str()
+
+Returns a [`StringStream`](streams/string-stream.md) that produces a string.
+
+| Parameter   | Type       | Default | Description           |
+|-------------|------------|---------|-----------------------|
+| `charset`   | `String`   |         | included characters   |
+| `length`    | `Integer`  | `10`    | target length         |
+
+```typescript
+import { str } from '@fluentfixture/core';
+
+const stream = str('abc', 10);
+
+console.log(stream.single());
+// 'abcca'
+```
+
+#### hex()
+
+Returns a [`StringStream`](streams/string-stream.md) that produces a hex string.
+
+| Parameter   | Type       | Default | Description   |
+|-------------|------------|---------|---------------|
+| `length`    | `Integer`  | `10`    | target length |
+
+```typescript
+import { hex } from '@fluentfixture/core';
+
+const stream = hex(10);
+
+console.log(stream.single());
+// '22c839cce0'
+```
+
+#### binary()
+
+Returns a [`StringStream`](streams/string-stream.md) that produces a binary string.
+
+| Parameter   | Type       | Default | Description   |
+|-------------|------------|---------|---------------|
+| `length`    | `Integer`  | `10`    | target length |
+
+```typescript
+import { binary } from '@fluentfixture/core';
+
+const stream = binary(10);
+
+console.log(stream.single());
+// '1100001110'
+```
+
+#### octal()
+
+Returns a [`StringStream`](streams/string-stream.md) that produces an octal string.
+
+| Parameter   | Type       | Default | Description   |
+|-------------|------------|---------|---------------|
+| `length`    | `Integer`  | `10`    | target length |
+
+```typescript
+import { octal } from '@fluentfixture/core';
+
+const stream = octal(10);
+
+console.log(stream.single());
+// '2025723760'
+```
+
+#### numeric()
+
+Returns a [`StringStream`](streams/string-stream.md) that produces a numeric string.
+
+| Parameter   | Type       | Default | Description   |
+|-------------|------------|---------|---------------|
+| `length`    | `Integer`  | `10`    | target length |
+
+```typescript
+import { numeric } from '@fluentfixture/core';
+
+const stream = numeric(10);
+
+console.log(stream.single());
+// '0843683947'
+```
+
+#### alphabetic()
+
+Returns a [`StringStream`](streams/string-stream.md) that produces an alphabetic string.
+
+| Parameter   | Type       | Default | Description   |
+|-------------|------------|---------|---------------|
+| `length`    | `Integer`  | `10`    | target length |
+
+```typescript
+import { alphabetic } from '@fluentfixture/core';
+
+const stream = alphabetic(10);
+
+console.log(stream.single());
+// 'KlmobUQbyt'
+```
+
+#### alphanumeric()
+
+Returns a [`StringStream`](streams/string-stream.md) that produces an alphanumeric string.
+
+| Parameter   | Type       | Default | Description   |
+|-------------|------------|---------|---------------|
+| `length`    | `Integer`  | `10`    | target length |
+
+```typescript
+import { alphanumeric } from '@fluentfixture/core';
+
+const stream = alphanumeric(10);
+
+console.log(stream.single());
+// 'iZvY8UtXxh'
+```
