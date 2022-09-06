@@ -6,7 +6,7 @@ In [@fluentfixture](../../), streams cannot be initialized directly. To take adv
 
 #### bool()
 
-Returns a [`BooleanStream`](streams/boolean-stream.md)  that produces a boolean value.
+Returns a [`BooleanStream`](streams/boolean-stream.md) that produces a boolean value.
 
 | Parameter    | Type    | Default | Description                    |
 | ------------ | ------- | ------- |--------------------------------|
@@ -23,7 +23,7 @@ console.log(stream.many(5));
 
 #### truthy()
 
-Returns a [`BooleanStream`](streams/boolean-stream.md)  that always produces `true`.
+Returns a [`BooleanStream`](streams/boolean-stream.md) that always produces `true`.
 
 ```typescript
 import { truthy } from '@fluentfixture/core';
@@ -36,7 +36,7 @@ console.log(stream.many(5));
 
 #### falsy()
 
-Returns a [`BooleanStream`](streams/boolean-stream.md)  that always produces `false`.
+Returns a [`BooleanStream`](streams/boolean-stream.md) that always produces `false`.
 
 ```typescript
 import { falsy } from '@fluentfixture/core';
@@ -51,7 +51,7 @@ console.log(stream.many(5));
 
 #### int()
 
-Returns an [`NumberStream`](streams/number-stream.md)  that produces an integer value.
+Returns an [`NumberStream`](streams/number-stream.md) that produces an integer value.
 
 | Parameter | Type      | Default | Description    |
 | --------- | --------- | ------- |----------------|
@@ -69,7 +69,7 @@ console.log(stream.many(5));
 
 #### real()
 
-Returns an [`NumberStream`](streams/number-stream.md)  that produces a float value.
+Returns an [`NumberStream`](streams/number-stream.md) that produces a float value.
 
 | Parameter | Type    | Default | Description    |
 | --------- | ------- | ------- |----------------|
@@ -87,7 +87,7 @@ console.log(stream.many(5));
 
 #### num()
 
-Returns an [`NumberStream`](streams/number-stream.md)  that always produces the given number.
+Returns an [`NumberStream`](streams/number-stream.md) that always produces the given number.
 
 | Parameter | Type     | Default | Description  |
 | --------- | -------- | ------- |--------------|
@@ -104,7 +104,7 @@ console.log(stream.many(5));
 
 #### zero()
 
-Returns an [`NumberStream`](streams/number-stream.md)  that always produces `zero`.
+Returns an [`NumberStream`](streams/number-stream.md) that always produces `zero`.
 
 ```typescript
 import { zero } from '@fluentfixture/core';
@@ -117,7 +117,7 @@ console.log(stream.many(5));
 
 #### one()
 
-Returns an [`NumberStream`](streams/number-stream.md)  that always produces `one`.
+Returns an [`NumberStream`](streams/number-stream.md) that always produces `one`.
 
 ```typescript
 import { one } from '@fluentfixture/core';
@@ -271,7 +271,7 @@ console.log(stream.single());
 
 #### date()
 
-Returns a [`DateStream`](streams/date-stream.md)  that produces a date.
+Returns a [`DateStream`](streams/date-stream.md) that produces a date.
 
 | Parameter   | Type     | Default          | Description     |
 |-------------|----------|------------------|-----------------|
@@ -298,4 +298,150 @@ const stream = now();
 
 console.log(stream.single());
 // Tue Sep 06 2022 11:10:26 GMT+0300 (GMT+03:00)
+```
+
+
+### Object
+
+#### obj()
+
+Returns an [`ObjectStream`](streams/object-stream.md) that produces an object.
+
+| Parameter  | Type     | Default | Description  |
+|------------|----------|---------|--------------|
+| `model`    | `Object` |         | object model |
+
+```typescript
+import { int, obj, pick } from '@fluentfixture/core';
+
+const stream = obj({
+    amount: int(1, 100),
+    currency: pick(['USD', 'EUR']),
+});
+
+console.log(stream.single());
+// {amount: 59, currency: 'EUR'}
+```
+
+### Utilities
+
+#### nil()
+
+Returns a [`Stream`](streams/stream.md) that always produces null.
+
+```typescript
+import { nil } from '@fluentfixture/core';
+
+const stream = nil();
+
+console.log(stream.single());
+// null
+```
+
+#### undef()
+
+Returns a [`Stream`](streams/stream.md) that always produces undefined.
+
+```typescript
+import { undef } from '@fluentfixture/core';
+
+const stream = undef();
+
+console.log(stream.single());
+// null
+```
+
+#### val()
+
+Returns a [`Stream`](streams/stream.md) that always produces the given value.
+
+| Parameter  | Type  | Default | Description |
+|------------|-------|---------|-------------|
+| `value`    | `Any` |         | value       |
+
+```typescript
+import { val } from '@fluentfixture/core';
+
+const stream = val(5);
+
+console.log(stream.single());
+// 5
+```
+
+#### from()
+
+Returns a [`Stream`](streams/stream.md) that produces the result of the given function.
+
+| Parameter | Type       | Default | Description |
+|-----------|------------|---------|-------------|
+| `fn`      | `Function` |         | function    |
+
+```typescript
+import { from } from '@fluentfixture/core';
+
+const stream = from(() => 5);
+
+console.log(stream.single());
+// 5
+```
+
+#### list()
+
+Returns an [`ArrayStream`](streams/array-stream.md) that produces that contains the given list.
+
+| Parameter  | Type    | Default | Description  |
+|------------|---------|---------|--------------|
+| `arr`      | `Array` |         | array        |
+
+```typescript
+import { list } from '@fluentfixture/core';
+
+const stream = list([1, 2, 3])
+    .map(i => i * 2);
+
+console.log(stream.single());
+// [2, 4, 6]
+```
+
+#### pick()
+
+Returns a [`Stream`](streams/stream.md) that picks an item from the given list.
+
+```typescript
+import { pick } from '@fluentfixture/core';
+
+const stream = pick([1, 2, 3]);
+
+console.log(stream.single());
+// 3
+```
+
+#### take()
+
+Returns a [`Stream`](streams/stream.md) that takes items from the given list.
+
+| Parameter  | Type      | Default | Description  |
+|------------|-----------|---------|--------------|
+| `count`    | `Integer` |         | count        |
+
+```typescript
+import { take } from '@fluentfixture/core';
+
+const stream = take([1, 2, 3], 2);
+
+console.log(stream.single());
+// [2, 3]
+```
+
+#### shuffle()
+
+Returns a [`Stream`](streams/stream.md) that shuffles the given list.
+
+```typescript
+import { shuffle } from '@fluentfixture/core';
+
+const stream = shuffle([1, 2, 3]);
+
+console.log(stream.single());
+// [2, 3, 1]
 ```
