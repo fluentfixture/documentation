@@ -9,7 +9,7 @@ In [@fluentfixture](../../), streams cannot be initialized directly. To take adv
 Returns a [`BooleanStream`](streams/boolean-stream.md) that produces a boolean value.
 
 | Parameter    | Type    | Default | Description                    |
-| ------------ | ------- | ------- |--------------------------------|
+| ------------ | ------- | ------- | ------------------------------ |
 | `percentage` | `Float` | `0.5`   | chance causing it to be `true` |
 
 ```typescript
@@ -54,7 +54,7 @@ console.log(stream.many(5));
 Returns an [`NumberStream`](streams/number-stream.md) that produces an integer value.
 
 | Parameter | Type      | Default | Description    |
-| --------- | --------- | ------- |----------------|
+| --------- | --------- | ------- | -------------- |
 | `min`     | `Integer` | `0`     | lower boundary |
 | `max`     | `Integer` | `1000`  | upper boundary |
 
@@ -72,7 +72,7 @@ console.log(stream.many(5));
 Returns an [`NumberStream`](streams/number-stream.md) that produces a float value.
 
 | Parameter | Type    | Default | Description    |
-| --------- | ------- | ------- |----------------|
+| --------- | ------- | ------- | -------------- |
 | `min`     | `Float` | `0`     | lower boundary |
 | `max`     | `Float` | `1000`  | upper boundary |
 
@@ -89,9 +89,9 @@ console.log(stream.many(5));
 
 Returns an [`NumberStream`](streams/number-stream.md) that always produces the given number.
 
-| Parameter | Type     | Default | Description  |
-| --------- | -------- | ------- |--------------|
-| `value`   | `Number` |         | value        |
+| Parameter | Type     | Default | Description |
+| --------- | -------- | ------- | ----------- |
+| `value`   | `Number` |         | value       |
 
 ```typescript
 import { num } from '@fluentfixture/core';
@@ -134,9 +134,9 @@ console.log(stream.many(5));
 
 Returns a [`StringStream`](streams/string-stream.md) that always produces the given value.
 
-| Parameter  | Type     | Default | Description  |
-|------------|----------|---------|--------------|
-| `str`      | `String` |         | string       |
+| Parameter | Type     | Default | Description |
+| --------- | -------- | ------- | ----------- |
+| `str`     | `String` |         | string      |
 
 ```typescript
 import { text } from '@fluentfixture/core';
@@ -151,10 +151,10 @@ console.log(stream.single());
 
 Returns a [`StringStream`](streams/string-stream.md) that produces a string.
 
-| Parameter   | Type       | Default | Description           |
-|-------------|------------|---------|-----------------------|
-| `charset`   | `String`   |         | included characters   |
-| `length`    | `Integer`  | `10`    | target length         |
+| Parameter | Type      | Default | Description         |
+| --------- | --------- | ------- | ------------------- |
+| `charset` | `String`  |         | included characters |
+| `length`  | `Integer` | `10`    | target length       |
 
 ```typescript
 import { str } from '@fluentfixture/core';
@@ -169,9 +169,9 @@ console.log(stream.single());
 
 Returns a [`StringStream`](streams/string-stream.md) that produces a hex string.
 
-| Parameter   | Type       | Default | Description   |
-|-------------|------------|---------|---------------|
-| `length`    | `Integer`  | `10`    | target length |
+| Parameter | Type      | Default | Description   |
+| --------- | --------- | ------- | ------------- |
+| `length`  | `Integer` | `10`    | target length |
 
 ```typescript
 import { hex } from '@fluentfixture/core';
@@ -186,9 +186,9 @@ console.log(stream.single());
 
 Returns a [`StringStream`](streams/string-stream.md) that produces a binary string.
 
-| Parameter   | Type       | Default | Description   |
-|-------------|------------|---------|---------------|
-| `length`    | `Integer`  | `10`    | target length |
+| Parameter | Type      | Default | Description   |
+| --------- | --------- | ------- | ------------- |
+| `length`  | `Integer` | `10`    | target length |
 
 ```typescript
 import { binary } from '@fluentfixture/core';
@@ -203,9 +203,9 @@ console.log(stream.single());
 
 Returns a [`StringStream`](streams/string-stream.md) that produces an octal string.
 
-| Parameter   | Type       | Default | Description   |
-|-------------|------------|---------|---------------|
-| `length`    | `Integer`  | `10`    | target length |
+| Parameter | Type      | Default | Description   |
+| --------- | --------- | ------- | ------------- |
+| `length`  | `Integer` | `10`    | target length |
 
 ```typescript
 import { octal } from '@fluentfixture/core';
@@ -220,9 +220,9 @@ console.log(stream.single());
 
 Returns a [`StringStream`](streams/string-stream.md) that produces a numeric string.
 
-| Parameter   | Type       | Default | Description   |
-|-------------|------------|---------|---------------|
-| `length`    | `Integer`  | `10`    | target length |
+| Parameter | Type      | Default | Description   |
+| --------- | --------- | ------- | ------------- |
+| `length`  | `Integer` | `10`    | target length |
 
 ```typescript
 import { numeric } from '@fluentfixture/core';
@@ -237,9 +237,9 @@ console.log(stream.single());
 
 Returns a [`StringStream`](streams/string-stream.md) that produces an alphabetic string.
 
-| Parameter   | Type       | Default | Description   |
-|-------------|------------|---------|---------------|
-| `length`    | `Integer`  | `10`    | target length |
+| Parameter | Type      | Default | Description   |
+| --------- | --------- | ------- | ------------- |
+| `length`  | `Integer` | `10`    | target length |
 
 ```typescript
 import { alphabetic } from '@fluentfixture/core';
@@ -254,9 +254,9 @@ console.log(stream.single());
 
 Returns a [`StringStream`](streams/string-stream.md) that produces an alphanumeric string.
 
-| Parameter   | Type       | Default | Description   |
-|-------------|------------|---------|---------------|
-| `length`    | `Integer`  | `10`    | target length |
+| Parameter | Type      | Default | Description   |
+| --------- | --------- | ------- | ------------- |
+| `length`  | `Integer` | `10`    | target length |
 
 ```typescript
 import { alphanumeric } from '@fluentfixture/core';
@@ -273,10 +273,10 @@ console.log(stream.single());
 
 Returns a [`DateStream`](streams/date-stream.md) that produces a date.
 
-| Parameter   | Type     | Default          | Description     |
-|-------------|----------|------------------|-----------------|
-| `min`       | `Date`   | `yesterday`      | lower boundary  |
-| `max`       | `Date`   | `tomorrow`       | upper boundary  |
+| Parameter | Type   | Default     | Description    |
+| --------- | ------ | ----------- | -------------- |
+| `min`     | `Date` | `yesterday` | lower boundary |
+| `max`     | `Date` | `tomorrow`  | upper boundary |
 
 ```typescript
 import { date } from '@fluentfixture/core';
@@ -300,16 +300,15 @@ console.log(stream.single());
 // Tue Sep 06 2022 11:10:26 GMT+0300 (GMT+03:00)
 ```
 
-
 ### Object
 
 #### obj()
 
 Returns an [`ObjectStream`](streams/object-stream.md) that produces an object.
 
-| Parameter  | Type     | Default | Description  |
-|------------|----------|---------|--------------|
-| `model`    | `Object` |         | object model |
+| Parameter | Type     | Default | Description  |
+| --------- | -------- | ------- | ------------ |
+| `model`   | `Object` |         | object model |
 
 ```typescript
 import { int, obj, pick } from '@fluentfixture/core';
@@ -355,9 +354,9 @@ console.log(stream.single());
 
 Returns a [`Stream`](streams/stream.md) that always produces the given value.
 
-| Parameter  | Type  | Default | Description |
-|------------|-------|---------|-------------|
-| `value`    | `Any` |         | value       |
+| Parameter | Type  | Default | Description |
+| --------- | ----- | ------- | ----------- |
+| `value`   | `Any` |         | value       |
 
 ```typescript
 import { val } from '@fluentfixture/core';
@@ -373,7 +372,7 @@ console.log(stream.single());
 Returns a [`Stream`](streams/stream.md) that produces the result of the given function.
 
 | Parameter | Type       | Default | Description |
-|-----------|------------|---------|-------------|
+| --------- | ---------- | ------- | ----------- |
 | `fn`      | `Function` |         | function    |
 
 ```typescript
@@ -389,9 +388,9 @@ console.log(stream.single());
 
 Returns an [`ArrayStream`](streams/array-stream.md) that produces that contains the given list.
 
-| Parameter  | Type    | Default | Description  |
-|------------|---------|---------|--------------|
-| `arr`      | `Array` |         | array        |
+| Parameter | Type    | Default | Description |
+| --------- | ------- | ------- | ----------- |
+| `arr`     | `Array` |         | array       |
 
 ```typescript
 import { list } from '@fluentfixture/core';
@@ -416,18 +415,18 @@ console.log(stream.single());
 // 3
 ```
 
-#### take()
+#### sample()
 
-Returns a [`Stream`](streams/stream.md) that takes items from the given list.
+Returns an [`ArrayStream`](streams/array-stream.md) that takes items from the given list.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `count`    | `Integer` |         | count        |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `count`   | `Integer` |         | count       |
 
 ```typescript
-import { take } from '@fluentfixture/core';
+import { sample } from '@fluentfixture/core';
 
-const stream = take([1, 2, 3], 2);
+const stream = sample([1, 2, 3], 2);
 
 console.log(stream.single());
 // [2, 3]
@@ -435,7 +434,7 @@ console.log(stream.single());
 
 #### shuffle()
 
-Returns a [`Stream`](streams/stream.md) that shuffles the given list.
+Returns an [`ArrayStream`](streams/array-stream.md) that shuffles the given list.
 
 ```typescript
 import { shuffle } from '@fluentfixture/core';
