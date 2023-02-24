@@ -1,5 +1,7 @@
 # Pipe Functions
 
+### What Is A Pipe Function?
+
 A pipe function is a function that is chained in the format expression. Pipe functions are executed sequentially.
 
 ```typescript
