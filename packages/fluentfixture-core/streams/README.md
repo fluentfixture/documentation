@@ -1,4 +1,4 @@
-# ⛓ Streams
+# Streams
 
 > In software engineering, a fluent interface is an object-oriented API whose design relies extensively on method chaining. Its goal is to increase code legibility by creating a domain-specific language (DSL). (↪[wiki](https://en.wikipedia.org/wiki/Fluent\_interface))
 
@@ -39,3 +39,39 @@ Let's decompose the stream above to understand the stream and factory concept.
 | `.join(...)`   | ``[`StringStream`](string-stream.md)`` | `FunctionDecorator` | merge the previos output                   |
 | `.format(...)` | ``[`StringStream`](string-stream.md)`` | `FormatDecorator`   | formats the previous output                |
 | `.upperCase()` | ``[`StringStream`](string-stream.md)`` | `FunctionDecorator` | converts to upper case the previous outout |
+
+### Class Hierarchy
+
+To addition that, the relationship between factories and streams can be illustrated as the following figure.
+
+```mermaid
+classDiagram
+    Factory~T~ <|-- DateFactory
+    Factory <|-- Stream~T~
+    Stream  <|-- DateStream
+    Stream  *--  Factory
+    <<Abstract>> Factory
+    <<Abstract>> Stream
+    class Factory {
+      +single() ~T~
+      +many(length) List~T~
+    }
+    class DateFactory {
+      -Date min
+      -Date max
+      +single() Date
+      +many(length) List~Date~
+    }
+    class Stream {
+      #Factory~T~ factory
+      +single() ~T~
+      +many(length) List~T~
+    }
+    class DateStream {
+      #Factory~Date~ factory
+      +addDays(val) DateStream
+      +addYears(val) DateStream
+      +single() Date
+      +many(length) Date
+    }
+```
