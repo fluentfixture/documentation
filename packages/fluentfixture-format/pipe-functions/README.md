@@ -4,9 +4,9 @@
 
 A pipe function is a function that is chained in the format expression. Pipe functions are executed sequentially.
 
-```typescript
-"${path:func1(param1)|func2(param2)}"
-```
+#### Flow Diagram
+
+The flow diagram of expression`${path:func1(param1)|func2(param2)}` is illustrated on the following figure.
 
 ```mermaid
 stateDiagram-v2

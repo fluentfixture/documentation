@@ -9,6 +9,7 @@
   * [Pipe Functions](packages/fluentfixture-format/pipe-functions/README.md)
     * [Built-In Pipes](packages/fluentfixture-format/pipe-functions/built-ins.md)
     * [Custom Pipes](packages/fluentfixture-format/pipe-functions/customs.md)
+  * [How To Use](packages/fluentfixture-format/how-to-use.md)
   * [Error Handling](packages/fluentfixture-format/error-handling.md)
   * [Live Demo](https://codesandbox.io/s/github/fluentfixture/fluentfixture/tree/main/sample/01-format)
 * [@fluentfixture/core](packages/fluentfixture-core/README.md)
