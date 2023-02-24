@@ -1,8 +1,6 @@
-# 🐧 Built-Ins
+# Built-In Pipes
 
-[@fluentfixture/format](../) comes with lots of default transformation functions.
-
-### String Utils
+### String Pipes
 
 | Name                | Input Type | Output Type | Docs                                                                                                 |
 | ------------------- | ---------- | ----------- | ---------------------------------------------------------------------------------------------------- |
@@ -24,7 +22,7 @@
 | `snakeCase()`       | `String`   | `String`    | [Library Docs](https://www.npmjs.com/package/change-case)                                            |
 | `capitalCase()`     | `String`   | `String`    | [Library Docs](https://www.npmjs.com/package/change-case)                                            |
 
-### Array Utils
+### Array Pipes
 
 | Name        | Input Type | Output Type | Docs                                                                                                |
 | ----------- | ---------- | ----------- | --------------------------------------------------------------------------------------------------- |
@@ -32,13 +30,13 @@
 | `sort()`    | `Array`    | `Array`     | [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) |
 | `reverse()` | `Array`    | `Array`     | [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) |
 
-### Date Utils
+### Date Pipes
 
 | Name              | Input Type | Output Type | Docs                                                      |
 | ----------------- | ---------- | ----------- | --------------------------------------------------------- |
 | `date("pattern")` | `Date`     | `String`    | [Library Docs](https://day.js.org/docs/en/display/format) |
 
-### Other Utils
+### Other Pipes
 
 | Name             | Input Type | Output Type | Docs            |
 | ---------------- | ---------- | ----------- | --------------- |

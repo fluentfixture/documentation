@@ -1,9 +1,9 @@
-# ❗ Error Handling
+# Error Handling
 
 In the formatting process, there may be two types of errors.
 
 * Syntax errors.
-* Transformation errors.
+* Pipe errors.
 
 ### Syntax Errors
 
@@ -18,9 +18,9 @@ format('${padStart()}', {}); // missing semicolon at the index 0.
 format("${:split(',')}", {}); // single quotes are not supported.
 ```
 
-### Transformation Errors
+### Pipe Errors
 
-Transformation errors occur while invoking a transformation method. By default, these kinds of errors are handled by the library.
+Pipe errors occur while invoking a pipe function. By default, these kinds of errors are handled by the library.
 
 #### With IgnoreErrors Flag (Default)
 

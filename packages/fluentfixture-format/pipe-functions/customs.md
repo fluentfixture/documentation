@@ -1,6 +1,10 @@
-# 🐣 Customs
+# Custom Pipes
 
-[@fluentfixture/format](../) comes with lots of default transformation functions. In addition to these, custom providers can be defined.
+In addition to built-in pipes, any number of custom pipes can be defined.
+
+### Registering Custom Pipes
+
+A pipe must be a function with at least one parameter. The leftmost parameter of the pipe function will be used to retrive the previous output.
 
 ```typescript
 import { Formatter, Pipes } from '@fluentfixture/format';

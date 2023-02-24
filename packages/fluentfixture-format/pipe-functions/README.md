@@ -1,6 +1,6 @@
-# 🛠 Transformations
+# Pipe Functions
 
-A transformation is a function that is chained in the format expression. Transformation functions are executed sequentially.
+A pipe function is a function that is chained in the format expression. Pipe functions are executed sequentially.
 
 ```typescript
 "${path:func1()|func2()|func3()}"
