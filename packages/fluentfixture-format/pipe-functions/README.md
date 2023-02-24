@@ -5,16 +5,28 @@
 A pipe function is a function that is chained in the format expression. Pipe functions are executed sequentially.
 
 ```typescript
-"${path:func1()|func2()|func3()}"
+"${path:func1(param1)|func2(param2)}"
+```
+
+```mermaid
+stateDiagram-v2
+    [*] --> Path  :source
+    Path --> Pipes:path
+    Pipes --> [*] :out2 
+    state Pipes {
+        direction LR
+        [*]                --> func1(path,param1):path
+        func1(path,param1) --> func2(out1,param2):out1
+        func2(out1,param2) --> [*]               :out2
+    }
 ```
 
 For the expression above, the execution order;
 
-* evaluates the `path`&#x20;
+* evaluates the `path`
 * executes `func1()` with the evaluated value
 * executes `func2()` with the result of the `func1()`
-* executes `func3()` with the result of the `func2()`
-* returns the output of `func3()`
+* returns the output of `func2()`
 
 ### Naming Convention
 

@@ -14,6 +14,10 @@ Formatting syntax consists of two parts: `${path:func1()|func2()|...|funcN()}`
 | `${key:trim()\|padLeft(5)}` | `obj.key`       | `trim()` , `padLeft(5)` |
 | `${:trim()\|split(",")}`    | `obj`           | `trim()` , `split(",")` |
 
+{% hint style="info" %}
+The more information about pipes canbe found on [pipe-functions](pipe-functions/ "mention")
+{% endhint %}
+
 ### Examples
 
 [@fluentfixture/format](./) provides two global methods with the default configurations: `format` , `compile`. The `format` produces the formatted string immediately. Differently, `compile` returns a pre-compiled template for reuse.
