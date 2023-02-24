@@ -17,7 +17,7 @@ $ npm install @fluentfixture/format
 The [@fluentfixture/format](./) utilities can be used with global `format` and `compile` methods or a new `Formatter` instance. The following code snippet shows an example usage of global `compile` method.
 
 {% hint style="info" %}
-The more example can be found on [how-to-use.md](how-to-use.md "mention")
+The more example can be found on [how-to-use.md](how-to-use.md "mention")section.
 {% endhint %}
 
 ```typescript

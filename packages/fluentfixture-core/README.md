@@ -14,7 +14,11 @@ $ npm install @fluentfixture/core
 
 ### Usage
 
-[![Open in CodeSandbox](https://camo.githubusercontent.com/fea481e068f26e251350b77807052bdb6dfe8e5afc0059a724afe97e3d5da103/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4f70656e253230696e2d436f646553616e64626f782d626c75653f7374796c653d666c61742d737175617265266c6f676f3d636f646573616e64626f78)](https://codesandbox.io/s/github/fluentfixture/fluentfixture/tree/main/sample/02-core) [![Open in GitHub](https://camo.githubusercontent.com/2cc17ac141e499106ea5630a4effeba323c90f01b700f5d51cf223b0fd56ed83/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4f70656e253230696e2d4769746875622d677265656e3f7374796c653d666c61742d737175617265266c6f676f3d676974687562)](https://github.com/fluentfixture/fluentfixture/tree/main/sample/02-core) [![Open in GitBook](https://camo.githubusercontent.com/91c5d0d2bfbd8d6b4f6e4cd5ee78681dbdd3fe5b1addaf6024ed478847b7f9f9/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4f70656e253230696e2d476974426f6f6b2d79656c6c6f773f7374796c653d666c61742d737175617265266c6f676f3d676974626f6f6b)](https://docs.fluentfixture.com/packages/fluentfixture-core)
+The [@fluentfixture/core](./) provides many kinds of generators for different use cases. The example below demonstrates a simple e-commerce scenario.
+
+{% hint style="info" %}
+The internals of the package and other utilities can be found on [streams](streams/ "mention")and [generators.md](generators.md "mention")sections.
+{% endhint %}
 
 ```typescript
 import { alphabetic, bool, hex, int, obj, pick } from '@fluentfixture/core';
