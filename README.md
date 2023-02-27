@@ -18,13 +18,10 @@ The [@fluentfixture](https://github.com/fluentfixture) does not provide predefin
 
 ### Packages
 
-{% content-ref url="packages/fluentfixture-core/" %}
-[fluentfixture-core](packages/fluentfixture-core/)
-{% endcontent-ref %}
-
-{% content-ref url="packages/fluentfixture-format/" %}
-[fluentfixture-format](packages/fluentfixture-format/)
-{% endcontent-ref %}
+| Package                                                 | Desciption                                                     | Version |
+| ------------------------------------------------------- | -------------------------------------------------------------- | ------- |
+| [@fluentfixture/core](packages/fluentfixture-core/)     | Provides core modules and components for generating mock data. | `1.0.4` |
+| [@fluentfixture/format](packages/fluentfixture-format/) | A flexible string format library.                              | `1.0.4` |
 
 ### License
 
