@@ -4,14 +4,6 @@
 
 ## PACKAGES
 
-* [@fluentfixture/format](packages/fluentfixture-format/README.md)
-  * [Structure](packages/fluentfixture-format/simple-formatting.md)
-  * [Pipe Functions](packages/fluentfixture-format/pipe-functions/README.md)
-    * [Built-In Pipes](packages/fluentfixture-format/pipe-functions/built-ins.md)
-    * [Custom Pipes](packages/fluentfixture-format/pipe-functions/customs.md)
-  * [How To Use](packages/fluentfixture-format/how-to-use.md)
-  * [Error Handling](packages/fluentfixture-format/error-handling.md)
-  * [Live Demo](https://codesandbox.io/s/github/fluentfixture/fluentfixture/tree/main/sample/01-format)
 * [@fluentfixture/core](packages/fluentfixture-core/README.md)
   * [Everything Is A Factory](packages/fluentfixture-core/everything-is-a-factory.md)
   * [Streams](packages/fluentfixture-core/streams/README.md)
@@ -24,6 +16,14 @@
     * [Object Stream](packages/fluentfixture-core/streams/object-stream.md)
   * [Generators](packages/fluentfixture-core/generators.md)
   * [Live Demo](https://codesandbox.io/s/github/fluentfixture/fluentfixture/tree/main/sample/02-core)
+* [@fluentfixture/format](packages/fluentfixture-format/README.md)
+  * [Structure](packages/fluentfixture-format/simple-formatting.md)
+  * [Pipe Functions](packages/fluentfixture-format/pipe-functions/README.md)
+    * [Built-In Pipes](packages/fluentfixture-format/pipe-functions/built-ins.md)
+    * [Custom Pipes](packages/fluentfixture-format/pipe-functions/customs.md)
+  * [How To Use](packages/fluentfixture-format/how-to-use.md)
+  * [Error Handling](packages/fluentfixture-format/error-handling.md)
+  * [Live Demo](https://codesandbox.io/s/github/fluentfixture/fluentfixture/tree/main/sample/01-format)
 
 ***
 
