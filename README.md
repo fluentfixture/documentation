@@ -20,9 +20,11 @@ The [@fluentfixture](https://github.com/fluentfixture) doesn't provide predefine
 
 The [@fluentfixture/core](https://docs.fluentfixture.com/packages/fluentfixture-core) package offers various data generators for various use cases. Each of them supports a fluent interface with standard manipulation, sorting, and debugging features.
 
+***
+
 ### Format (@fluentfixture/format)
 
-The [@fluentfixture/format](https://docs.fluentfixture.com/packages/fluentfixture-format) is a flexible string format library. Provides formatting and compiling functionalities with extensible transformation capabilities.
+The [@fluentfixture/format](https://docs.fluentfixture.com/packages/fluentfixture-format) is a flexible string format library that provides formatting functionality with extensible transformation capabilities.
 
 ## License
 

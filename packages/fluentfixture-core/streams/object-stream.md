@@ -1,4 +1,4 @@
-# 🤎 Object Stream
+# Object Stream
 
 The `ObjectStream` is a [`Stream`](stream.md) that provides object-related methods.
 
@@ -6,10 +6,10 @@ The `ObjectStream` is a [`Stream`](stream.md) that provides object-related metho
 
 Returns an [`ObjectStream`](object-stream.md) that adds a property with the given value to the produced output.
 
-| Parameter   | Type     | Default | Description    |
-|-------------|----------| ------- |----------------|
-| `property`  | `String` |         | property name  |
-| `value`     | `Any`    |         | property value |
+| Parameter  | Type     | Default | Description    |
+| ---------- | -------- | ------- | -------------- |
+| `property` | `String` |         | property name  |
+| `value`    | `Any`    |         | property value |
 
 ```typescript
 import { int, obj, text } from '@fluentfixture/core';
@@ -30,10 +30,10 @@ console.log(extendedStream.single());
 
 Returns an [`ObjectStream`](object-stream.md) that adds a property to the produced output with the given stream.
 
-| Parameter    | Type       | Default | Description     |
-|--------------|------------| ------- |-----------------|
-| `property`   | `String`   |         | property name   |
-| `stream`     | `Stream`   |         | property source |
+| Parameter  | Type     | Default | Description     |
+| ---------- | -------- | ------- | --------------- |
+| `property` | `String` |         | property name   |
+| `stream`   | `Stream` |         | property source |
 
 ```typescript
 import { int, obj, text } from '@fluentfixture/core';
@@ -55,7 +55,7 @@ console.log(extendedStream.single());
 Returns an [`ObjectStream`](object-stream.md) that adds a property to the produced output by using the result of the given function.
 
 | Parameter   | Type       | Default | Description        |
-|-------------|------------| ------- |--------------------|
+| ----------- | ---------- | ------- | ------------------ |
 | `property`  | `String`   |         | property name      |
 | `converter` | `Function` |         | converter function |
 

@@ -1,4 +1,4 @@
-# 💙 Array Stream
+# Array Stream
 
 The `ArrayStream` is a [`Stream`](stream.md) that provides array-related methods.
 
@@ -20,7 +20,7 @@ console.log(stream.single());
 Returns a [`StringStream`](string-stream.md) that merges the produced output.
 
 | Parameter   | Type     | Default | Description |
-|-------------|----------|---------|-------------|
+| ----------- | -------- | ------- | ----------- |
 | `seperator` | `String` | `''`    | separator   |
 
 ```typescript
@@ -36,9 +36,9 @@ console.log(stream.single());
 
 Returns an [`ArrayStream`](array-stream.md) that samples the produced output.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `size`     | `Integer` | `3`     | sample size  |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `size`    | `Integer` | `3`     | sample size |
 
 ```typescript
 import { list } from '@fluentfixture/core';
@@ -53,9 +53,9 @@ console.log(stream.single());
 
 Returns an [`ArrayStream`](array-stream.md) that sorts the produced output.
 
-| Parameter  | Type       | Default | Description   |
-|------------|------------|---------|---------------|
-| `fn`       | `Function` |         | sort function |
+| Parameter | Type       | Default | Description   |
+| --------- | ---------- | ------- | ------------- |
+| `fn`      | `Function` |         | sort function |
 
 ```typescript
 import { list } from '@fluentfixture/core';
@@ -70,9 +70,9 @@ console.log(stream.single());
 
 Returns an [`ArrayStream`](array-stream.md) that maps the produced output.
 
-| Parameter  | Type       | Default | Description  |
-|------------|------------|---------|--------------|
-| `fn`       | `Function` |         | map function |
+| Parameter | Type       | Default | Description  |
+| --------- | ---------- | ------- | ------------ |
+| `fn`      | `Function` |         | map function |
 
 ```typescript
 import { list } from '@fluentfixture/core';
@@ -87,9 +87,9 @@ console.log(stream.single());
 
 Returns an [`ArrayStream`](array-stream.md) that filters the produced output.
 
-| Parameter  | Type       | Default | Description     |
-|------------|------------|---------|-----------------|
-| `fn`       | `Function` |         | filter function |
+| Parameter | Type       | Default | Description     |
+| --------- | ---------- | ------- | --------------- |
+| `fn`      | `Function` |         | filter function |
 
 ```typescript
 import { list } from '@fluentfixture/core';

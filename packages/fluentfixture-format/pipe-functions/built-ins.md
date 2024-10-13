@@ -2,42 +2,16 @@
 
 ### String Pipes
 
-| Name                | Input Type | Output Type | Docs                                                                                                 |
-| ------------------- | ---------- | ----------- | ---------------------------------------------------------------------------------------------------- |
-| `lowerCase()`       | `String`   | `String`    | [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) |
-| `upperCase()`       | `String`   | `String`    | [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) |
-| `trim()`            | `String`   | `String`    | [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) |
-| `trimStart()`       | `String`   | `String`    | [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) |
-| `trimEnd()`         | `String`   | `String`    | [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) |
-| `padStart(len, ch)` | `String`   | `String`    | [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) |
-| `padEnd(len, ch)`   | `String`   | `String`    | [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) |
-| `split(ch)`         | `String`   | `Array`     | [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/String) |
-| `camelCase()`       | `String`   | `String`    | [Library Docs](https://www.npmjs.com/package/change-case)                                            |
-| `constantCase()`    | `String`   | `String`    | [Library Docs](https://www.npmjs.com/package/change-case)                                            |
-| `dotCase()`         | `String`   | `String`    | [Library Docs](https://www.npmjs.com/package/change-case)                                            |
-| `headerCase()`      | `String`   | `String`    | [Library Docs](https://www.npmjs.com/package/change-case)                                            |
-| `paramCase()`       | `String`   | `String`    | [Library Docs](https://www.npmjs.com/package/change-case)                                            |
-| `pascalCase()`      | `String`   | `String`    | [Library Docs](https://www.npmjs.com/package/change-case)                                            |
-| `pathCase()`        | `String`   | `String`    | [Library Docs](https://www.npmjs.com/package/change-case)                                            |
-| `snakeCase()`       | `String`   | `String`    | [Library Docs](https://www.npmjs.com/package/change-case)                                            |
-| `capitalCase()`     | `String`   | `String`    | [Library Docs](https://www.npmjs.com/package/change-case)                                            |
+<table><thead><tr><th width="232">Name</th><th>Input Type</th><th>Output Type</th><th>Docs</th></tr></thead><tbody><tr><td><code>lowerCase()</code></td><td><code>String</code></td><td><code>String</code></td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">Mdn Docs</a></td></tr><tr><td><code>upperCase()</code></td><td><code>String</code></td><td><code>String</code></td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">Mdn Docs</a></td></tr><tr><td><code>trim()</code></td><td><code>String</code></td><td><code>String</code></td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">Mdn Docs</a></td></tr><tr><td><code>trimStart()</code></td><td><code>String</code></td><td><code>String</code></td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">Mdn Docs</a></td></tr><tr><td><code>trimEnd()</code></td><td><code>String</code></td><td><code>String</code></td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">Mdn Docs</a></td></tr><tr><td><code>padStart(len, ch)</code></td><td><code>String</code></td><td><code>String</code></td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">Mdn Docs</a></td></tr><tr><td><code>padEnd(len, ch)</code></td><td><code>String</code></td><td><code>String</code></td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">Mdn Docs</a></td></tr><tr><td><code>split(ch)</code></td><td><code>String</code></td><td><code>Array</code></td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">Mdn Docs</a></td></tr><tr><td><code>camelCase()</code></td><td><code>String</code></td><td><code>String</code></td><td><a href="https://www.npmjs.com/package/change-case">Library Docs</a></td></tr><tr><td><code>constantCase()</code></td><td><code>String</code></td><td><code>String</code></td><td><a href="https://www.npmjs.com/package/change-case">Library Docs</a></td></tr><tr><td><code>dotCase()</code></td><td><code>String</code></td><td><code>String</code></td><td><a href="https://www.npmjs.com/package/change-case">Library Docs</a></td></tr><tr><td><code>headerCase()</code></td><td><code>String</code></td><td><code>String</code></td><td><a href="https://www.npmjs.com/package/change-case">Library Docs</a></td></tr><tr><td><code>paramCase()</code></td><td><code>String</code></td><td><code>String</code></td><td><a href="https://www.npmjs.com/package/change-case">Library Docs</a></td></tr><tr><td><code>pascalCase()</code></td><td><code>String</code></td><td><code>String</code></td><td><a href="https://www.npmjs.com/package/change-case">Library Docs</a></td></tr><tr><td><code>pathCase()</code></td><td><code>String</code></td><td><code>String</code></td><td><a href="https://www.npmjs.com/package/change-case">Library Docs</a></td></tr><tr><td><code>snakeCase()</code></td><td><code>String</code></td><td><code>String</code></td><td><a href="https://www.npmjs.com/package/change-case">Library Docs</a></td></tr><tr><td><code>capitalCase()</code></td><td><code>String</code></td><td><code>String</code></td><td><a href="https://www.npmjs.com/package/change-case">Library Docs</a></td></tr></tbody></table>
 
 ### Array Pipes
 
-| Name        | Input Type | Output Type | Docs                                                                                                |
-| ----------- | ---------- | ----------- | --------------------------------------------------------------------------------------------------- |
-| `join(ch)`  | `Array`    | `String`    | [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) |
-| `sort()`    | `Array`    | `Array`     | [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) |
-| `reverse()` | `Array`    | `Array`     | [Mdn Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array) |
+<table><thead><tr><th width="232">Name</th><th>Input Type</th><th width="152">Output Type</th><th>Docs</th></tr></thead><tbody><tr><td><code>join(ch)</code></td><td><code>Array</code></td><td><code>String</code></td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Mdn Docs</a></td></tr><tr><td><code>sort()</code></td><td><code>Array</code></td><td><code>Array</code></td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Mdn Docs</a></td></tr><tr><td><code>reverse()</code></td><td><code>Array</code></td><td><code>Array</code></td><td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Mdn Docs</a></td></tr></tbody></table>
 
 ### Date Pipes
 
-| Name              | Input Type | Output Type | Docs                                                      |
-| ----------------- | ---------- | ----------- | --------------------------------------------------------- |
-| `date("pattern")` | `Date`     | `String`    | [Library Docs](https://day.js.org/docs/en/display/format) |
+<table><thead><tr><th width="232">Name</th><th>Input Type</th><th width="152">Output Type</th><th>Docs</th></tr></thead><tbody><tr><td><code>date("pattern")</code></td><td><code>Date</code></td><td><code>String</code></td><td><a href="https://day.js.org/docs/en/display/format">Library Docs</a></td></tr></tbody></table>
 
 ### Other Pipes
 
-| Name             | Input Type | Output Type | Docs            |
-| ---------------- | ---------- | ----------- | --------------- |
-| `default(value)` | `Any`      | `Any`       | Returns default |
+<table><thead><tr><th width="232">Name</th><th>Input Type</th><th width="152">Output Type</th><th>Docs</th></tr></thead><tbody><tr><td><code>default(value)</code></td><td><code>Any</code></td><td><code>Any</code></td><td>Returns default</td></tr></tbody></table>

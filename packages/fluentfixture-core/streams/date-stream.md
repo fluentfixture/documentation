@@ -1,4 +1,4 @@
-# 🖤 Date Stream
+# Date Stream
 
 The `DateStream` is a [`Stream`](stream.md) that provides date-related methods.
 
@@ -6,9 +6,9 @@ The `DateStream` is a [`Stream`](stream.md) that provides date-related methods.
 
 Returns a [`DateStream`](date-stream.md) that adds milliseconds to the produced output.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `value`    | `Integer` |         | value        |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `value`   | `Integer` |         | value       |
 
 ```typescript
 import { now } from '@fluentfixture/core';
@@ -23,9 +23,9 @@ console.log(stream.single());
 
 Returns a [`DateStream`](date-stream.md) that subtracts milliseconds from the produced output.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `value`    | `Integer` |         | value        |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `value`   | `Integer` |         | value       |
 
 ```typescript
 import { now } from '@fluentfixture/core';
@@ -40,9 +40,9 @@ console.log(stream.single());
 
 Returns a [`DateStream`](date-stream.md) that sets the milliseconds of the produced output.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `value`    | `Integer` |         | value        |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `value`   | `Integer` |         | value       |
 
 ```typescript
 import { now } from '@fluentfixture/core';
@@ -70,9 +70,9 @@ console.log(stream.single());
 
 Returns a [`DateStream`](date-stream.md) that adds seconds to the produced output.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `value`    | `Integer` |         | value        |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `value`   | `Integer` |         | value       |
 
 ```typescript
 import { now } from '@fluentfixture/core';
@@ -87,9 +87,9 @@ console.log(stream.single());
 
 Returns a [`DateStream`](date-stream.md) that subtracts seconds from the produced output.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `value`    | `Integer` |         | value        |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `value`   | `Integer` |         | value       |
 
 ```typescript
 import { now } from '@fluentfixture/core';
@@ -104,9 +104,9 @@ console.log(stream.single());
 
 Returns a [`DateStream`](date-stream.md) that sets the seconds of the produced output.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `value`    | `Integer` |         | value        |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `value`   | `Integer` |         | value       |
 
 ```typescript
 import { now } from '@fluentfixture/core';
@@ -134,9 +134,9 @@ console.log(stream.single());
 
 Returns a [`DateStream`](date-stream.md) that adds hours to the produced output.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `value`    | `Integer` |         | value        |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `value`   | `Integer` |         | value       |
 
 ```typescript
 import { now } from '@fluentfixture/core';
@@ -151,9 +151,9 @@ console.log(stream.single());
 
 Returns a [`DateStream`](date-stream.md) that subtracts hours from the produced output.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `value`    | `Integer` |         | value        |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `value`   | `Integer` |         | value       |
 
 ```typescript
 import { now } from '@fluentfixture/core';
@@ -168,9 +168,9 @@ console.log(stream.single());
 
 Returns a [`DateStream`](date-stream.md) that sets the hours of the produced output.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `value`    | `Integer` |         | value        |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `value`   | `Integer` |         | value       |
 
 ```typescript
 import { now } from '@fluentfixture/core';
@@ -194,14 +194,13 @@ console.log(stream.single());
 // hours part of the now
 ```
 
-
 ### addDays()
 
 Returns a [`DateStream`](date-stream.md) that adds days to the produced output.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `value`    | `Integer` |         | value        |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `value`   | `Integer` |         | value       |
 
 ```typescript
 import { now } from '@fluentfixture/core';
@@ -216,9 +215,9 @@ console.log(stream.single());
 
 Returns a [`DateStream`](date-stream.md) that subtracts days from the produced output.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `value`    | `Integer` |         | value        |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `value`   | `Integer` |         | value       |
 
 ```typescript
 import { now } from '@fluentfixture/core';
@@ -233,9 +232,9 @@ console.log(stream.single());
 
 Returns a [`DateStream`](date-stream.md) that sets the days of month of the produced output.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `value`    | `Integer` |         | value        |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `value`   | `Integer` |         | value       |
 
 ```typescript
 import { now } from '@fluentfixture/core';
@@ -250,9 +249,9 @@ console.log(stream.single());
 
 Returns a [`DateStream`](date-stream.md) that sets the days of week of the produced output.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `value`    | `Integer` |         | value        |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `value`   | `Integer` |         | value       |
 
 ```typescript
 import { now } from '@fluentfixture/core';
@@ -293,9 +292,9 @@ console.log(stream.single());
 
 Returns a [`DateStream`](date-stream.md) that adds months to the produced output.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `value`    | `Integer` |         | value        |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `value`   | `Integer` |         | value       |
 
 ```typescript
 import { now } from '@fluentfixture/core';
@@ -310,9 +309,9 @@ console.log(stream.single());
 
 Returns a [`DateStream`](date-stream.md) that subtracts months from the produced output.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `value`    | `Integer` |         | value        |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `value`   | `Integer` |         | value       |
 
 ```typescript
 import { now } from '@fluentfixture/core';
@@ -327,9 +326,9 @@ console.log(stream.single());
 
 Returns a [`DateStream`](date-stream.md) that sets the months of the produced output.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `value`    | `Integer` |         | value        |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `value`   | `Integer` |         | value       |
 
 ```typescript
 import { now } from '@fluentfixture/core';
@@ -353,15 +352,13 @@ console.log(stream.single());
 // months part of the now
 ```
 
-
-
 ### addYears()
 
 Returns a [`DateStream`](date-stream.md) that adds years to the produced output.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `value`    | `Integer` |         | value        |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `value`   | `Integer` |         | value       |
 
 ```typescript
 import { now } from '@fluentfixture/core';
@@ -376,9 +373,9 @@ console.log(stream.single());
 
 Returns a [`DateStream`](date-stream.md) that subtracts years from the produced output.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `value`    | `Integer` |         | value        |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `value`   | `Integer` |         | value       |
 
 ```typescript
 import { now } from '@fluentfixture/core';
@@ -393,9 +390,9 @@ console.log(stream.single());
 
 Returns a [`DateStream`](date-stream.md) that sets the years of the produced output.
 
-| Parameter  | Type      | Default | Description  |
-|------------|-----------|---------|--------------|
-| `value`    | `Integer` |         | value        |
+| Parameter | Type      | Default | Description |
+| --------- | --------- | ------- | ----------- |
+| `value`   | `Integer` |         | value       |
 
 ```typescript
 import { now } from '@fluentfixture/core';
@@ -418,5 +415,3 @@ const stream = now().getYears();
 console.log(stream.single());
 // years part of the now
 ```
-
-

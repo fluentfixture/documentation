@@ -1,4 +1,4 @@
-# 💚 String Stream
+# String Stream
 
 The `StringStream` is a [`Stream`](stream.md) that provides string-related methods.
 

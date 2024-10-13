@@ -15,7 +15,7 @@
     * [Array Stream](packages/fluentfixture-core/streams/array-stream.md)
     * [Object Stream](packages/fluentfixture-core/streams/object-stream.md)
   * [Generators](packages/fluentfixture-core/generators.md)
-  * [Live Demo](https://codesandbox.io/s/github/fluentfixture/fluentfixture/tree/main/sample/02-core)
+  * [Live Demo](https://codesandbox.io/s/github/fluentfixture/fluentfixture/tree/main/sample/core)
 * [@fluentfixture/format](packages/fluentfixture-format/README.md)
   * [Structure](packages/fluentfixture-format/simple-formatting.md)
   * [Pipe Functions](packages/fluentfixture-format/pipe-functions/README.md)

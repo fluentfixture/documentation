@@ -30,48 +30,4 @@ console.log(stream.single());
 
 Let's decompose the stream above to understand the stream and factory concept.
 
-| Code           | Output                                 | Sub-Component       | Job                                        |
-| -------------- | -------------------------------------- | ------------------- | ------------------------------------------ |
-| `int(1, 100)`  | ``[`NumberStream`](number-stream.md)`` | `IntegerFactory`    | generates an integer                       |
-| `.add(0.5)`    | ``[`NumberStream`](number-stream.md)`` | `FunctionDecorator` | adds `0.5` to the previous output          |
-| `.array(10)`   | ``[`ArrayStream`](array-stream.md)``   | `Iterator`          | Iterates to decorated factory              |
-| `.sort(...)`   | ``[`ArrayStream`](array-stream.md)``   | `FunctionDecorator` | sorts the previous output                  |
-| `.join(...)`   | ``[`StringStream`](string-stream.md)`` | `FunctionDecorator` | merge the previos output                   |
-| `.format(...)` | ``[`StringStream`](string-stream.md)`` | `FormatDecorator`   | formats the previous output                |
-| `.upperCase()` | ``[`StringStream`](string-stream.md)`` | `FunctionDecorator` | converts to upper case the previous outout |
-
-### Class Hierarchy
-
-To addition that, the relationship between factories and streams can be illustrated as the following figure.
-
-```mermaid
-classDiagram
-    Factory~T~ <|-- DateFactory
-    Factory <|-- Stream~T~
-    Stream  <|-- DateStream
-    Stream  *--  Factory
-    <<Abstract>> Factory
-    <<Abstract>> Stream
-    class Factory {
-      +single() ~T~
-      +many(length) List~T~
-    }
-    class DateFactory {
-      -Date min
-      -Date max
-      +single() Date
-      +many(length) List~Date~
-    }
-    class Stream {
-      #Factory~T~ factory
-      +single() ~T~
-      +many(length) List~T~
-    }
-    class DateStream {
-      #Factory~Date~ factory
-      +addDays(val) DateStream
-      +addYears(val) DateStream
-      +single() Date
-      +many(length) Date
-    }
-```
+<table><thead><tr><th width="190">Code</th><th width="175">Output</th><th width="227">Sub-Component</th><th>Job</th></tr></thead><tbody><tr><td><code>int(1, 100)</code></td><td><a href="number-stream.md"><code>NumberStream</code></a></td><td><code>IntegerFactory</code></td><td>generates an integer</td></tr><tr><td><code>.add(0.5)</code></td><td><a href="number-stream.md"><code>NumberStream</code></a></td><td><code>FunctionDecorator</code></td><td>adds <code>0.5</code> to the previous output</td></tr><tr><td><code>.array(10)</code></td><td><a href="array-stream.md"><code>ArrayStream</code></a></td><td><code>Iterator</code></td><td>Iterates to decorated factory</td></tr><tr><td><code>.sort(...)</code></td><td><a href="array-stream.md"><code>ArrayStream</code></a></td><td><code>FunctionDecorator</code></td><td>sorts the previous output</td></tr><tr><td><code>.join(...)</code></td><td><a href="string-stream.md"><code>StringStream</code></a></td><td><code>FunctionDecorator</code></td><td>merge the previos output</td></tr><tr><td><code>.format(...)</code></td><td><a href="string-stream.md"><code>StringStream</code></a></td><td><code>FormatDecorator</code></td><td>formats the previous output</td></tr><tr><td><code>.upperCase()</code></td><td><a href="string-stream.md"><code>StringStream</code></a></td><td><code>FunctionDecorator</code></td><td>converts to upper case the previous outout</td></tr></tbody></table>

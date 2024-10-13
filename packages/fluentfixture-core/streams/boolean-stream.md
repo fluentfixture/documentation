@@ -1,4 +1,4 @@
-# 💜 Boolean Stream
+# Boolean Stream
 
 The `BooleanStream` is a [`Stream`](stream.md) that provides boolean-related methods.
 

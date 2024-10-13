@@ -1,4 +1,4 @@
-# 🧡 Stream
+# Stream
 
 The `Stream` is the base class of all other streams.
 
@@ -38,9 +38,9 @@ console.log(stream.many(2));
 
 Returns an [`ArrayStream`](array-stream.md) with the given length.
 
-| Parameter | Type      | Default | Description                                             |
-| --------- | --------- | ------- | ------------------------------------------------------- |
-| `length`  | `Integer` | `10`    | target length of the [`ArrayStream`](array-stream.md)`` |
+| Parameter | Type      | Default | Description                                           |
+| --------- | --------- | ------- | ----------------------------------------------------- |
+| `length`  | `Integer` | `10`    | target length of the [`ArrayStream`](array-stream.md) |
 
 ```typescript
 import { val } from '@fluentfixture/core';
